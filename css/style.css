@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+#bannerTop {
+  margin: 0;
+  padding: 0;
+  background-color: chartreuse;
+  /*height: 5vh;*/
+}
+#bannerTop h5 {
+  margin: 0;
+  /*padding: 0.5em;*/
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+header {
+  /*height: 6vh;*/
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header li a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  width: 12vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+/*side navigation*/
+
+#navside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*position: sticky;*/
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.nav2 {
+  height: 50%;
+  writing-mode: vertical-lr;
+  border: 1px solid black;
+  transform: rotate(180deg);
+}
+
+.nav2 h2 {
+  text-align: center;
+}
+
+/*CART*/
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*Desktop
+@media only screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "as hd"
+      "as ma";
+    grid-template-columns: 5% 1fr;
+  }
+}
+
+#navside {
+  grid-area: as;
+}
+
+header {
+  grid-area: hd;
+}
+
+main {
+  grid-area: ma;
+}
+*/

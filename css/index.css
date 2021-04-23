@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1000px) {
+  #slideshow {
+    display: flex;
+    /*height: 91vh;*/
+  }
+
+  #slideshow img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
