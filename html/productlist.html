@@ -9,7 +9,24 @@
     <link rel="stylesheet" href="/css/productlist.css" />
   </head>
   <body>
-    <aside class="cart">cart</aside>
+    <!--cart template-->
+    <template id="cart-item-template">
+      <div class="cart-item">
+        <label for="ID">Name</label>
+        <input type="number" id="ID" min="0" max="10" maxlength="2" />
+        <p class="price-row"><span>123</span> DKK</p>
+        <p class="price-each"><span>123</span> DKK each</p>
+      </div> </template
+    ><!--END cart template-->
+    <aside class="cart">
+      <form action="#">
+        <div class="cart-content">
+          <h2>the cart is empty</h2>
+        </div>
+        <button type="submit">checkout</button>
+      </form>
+    </aside>
+    <!--
     <template class="productCart">
         <article">
           <img
@@ -32,6 +49,7 @@
           </div>
         </article>
       </template>
+-->
     <template class="product">
       <article class="saleItem">
         <img

@@ -8,7 +8,7 @@ function getData() {
     .then((res) => res.json())
     .then((response) => {
       showProducts(response);
-      console.log(response);
+    //   console.log(response);
     })
     .catch((err) => {
       console.error(err);
@@ -31,3 +31,35 @@ function showProducts(products) {
     document.querySelector(".productList").appendChild(copy);
   });
 }
+
+const contents = [
+    {
+    _id="2",
+    img="nonoe",
+    qty="3",
+    name="this is the name",
+    price="320",
+    },
+    {
+    _id="3",
+    img="imbala",
+    qty="4",
+    name="this is the name2",
+    price="620",
+    },
+    {
+    _id="3",
+    img="gulo",
+    qty="5",
+    name="this is the name3",
+    price="810",
+    },
+];
+
+contents.forEach((purchase)=>{
+    console.log(purchase);
+
+    const tempItem = document.querySelector("#cart-item-template").content;
+    const itemCopy = tempItem.cloneNode(true);
+    document.querySelector(".cart-content").appendChild(itemCopy);
+});
