@@ -147,6 +147,10 @@ li a:hover {
   text-decoration-thickness: 5px;
 }
 
+strong {
+  color: #e3ff36;
+}
+
 /*side navigation*/
 
 #navside {

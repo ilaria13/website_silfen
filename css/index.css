@@ -1,3 +1,6 @@
+* {
+  border: black 1px solid;
+}
 #collection {
   background-color: #b3e8ef;
   padding: 5%;
@@ -43,6 +46,13 @@ a {
   padding: 0;
 }
 
+.mostWantedArticles {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
 @media only screen and (min-width: 900px) {
   #slideshow {
     display: flex;
@@ -54,5 +64,19 @@ a {
     object-fit: cover;
     margin: 0;
     padding: 0;
+  }
+
+  #silfenStars {
+    background-color: #aed5b2;
+    display: flex;
+  }
+
+  #silfenStars img {
+    object-fit: cover;
+  }
+  .silfenStarText {
+    align-self: flex-end;
+    padding: 25px;
+    width: 50%;
   }
 }
