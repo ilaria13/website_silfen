@@ -34,17 +34,21 @@
   }
 }
 
+a {
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (min-width: 900px) {
   #slideshow {
-    position: relative;
-    top: 0;
-    left: 0;
     display: flex;
-    height: 90vh;
   }
 
-  #slideshow img {
-    width: 50%;
+  .slide {
+    height: 45vw;
+    width: 100%;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
 }
