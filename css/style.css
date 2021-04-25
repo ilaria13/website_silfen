@@ -9,6 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "DM Sans", sans-serif;
+  display: flex;
 }
 
 /* HEADER STARTS*/
@@ -16,14 +17,7 @@ body {
 #bannerTop {
   margin: 0;
   padding: 0;
-  background-color: chartreuse;
-}
-
-#bannerTop h5 {
-  margin: 0;
-  padding: 0.5em;
-  font-size: 0.7rem;
-  text-transform: uppercase;
+  background-color: #b3e8ef;
 }
 
 nav {
@@ -57,34 +51,85 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
 h2 {
   font-size: 2em;
   padding: 0;
   margin: 0;
 }
 
+h4 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0.5em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
 /*side navigation*/
 
 #navside {
-  position: absolute;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  left: 0;
-  /*position: sticky;*/
-  background-color: yellow;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-self: center;
 }
 
-.nav2 {
+#nav1 {
   height: 50%;
   writing-mode: vertical-lr;
-  border: 1px solid black;
   transform: rotate(180deg);
 }
 
-.nav2 h2 {
+#nav2 {
+  height: 50%;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+#nav2 h2,
+#nav1 h2 {
   text-align: center;
+  padding: 3%;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.bgNav1 {
+  background-color: #7bafd4;
+  color: black;
+}
+
+.bgNav2 {
+  background-color: #e3ff36;
+  color: black;
+}
+
+.bgNavShadow {
+  box-shadow: -4px 14px 36px -3px rgba(156, 156, 156, 0.57) inset;
+  -webkit-box-shadow: -4px 14px 36px -3px rgba(156, 156, 156, 0.57) inset;
+  -moz-box-shadow: -4px 14px 36px -3px rgba(156, 156, 156, 0.57) inset;
+  color: rgb(196, 196, 196);
 }
 
 /*CART*/
@@ -93,27 +138,3 @@ h2 {
   top: 0;
   right: 0;
 }
-
-/*Desktop
-@media only screen and (min-width: 1000px) {
-  body {
-    display: grid;
-    grid-template-areas:
-      "as hd"
-      "as ma";
-    grid-template-columns: 5% 1fr;
-  }
-}
-
-#navside {
-  grid-area: as;
-}
-
-header {
-  grid-area: hd;
-}
-
-main {
-  grid-area: ma;
-}
-*/
