@@ -20,6 +20,26 @@ body {
   background-color: #b3e8ef;
 }
 
+.scrolling {
+  animation: scrollText;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-30vw);
+  }
+  50% {
+    transform: translateX(110vw);
+  }
+
+  100% {
+    transform: translateX(-30vw);
+  }
+}
+
 nav {
   padding: 0;
   display: grid;
@@ -33,11 +53,6 @@ nav {
   list-style: none;
   display: flex;
   justify-content: space-around;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: black;
 }
 
 #logo {
@@ -81,7 +96,10 @@ h5 {
   font-size: 0.7rem;
   text-transform: uppercase;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 /*side navigation*/
 
 #navside {
