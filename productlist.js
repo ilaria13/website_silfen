@@ -96,7 +96,7 @@ CART.init();
       //_contents is a temporary string
       let _contents = localStorage.getItem(CART.KEY);
 
-      if (_contents.length == 0) {
+      if (_contents) {
         //if there's anything there, turn it into JS objects, that we can access with the dot . notation
         CART.contents = JSON.parse(_contents);
       } else {
