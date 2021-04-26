@@ -55,11 +55,25 @@ function showProducts(products) {
     },
   ];
 
-  contents.forEach((purchase) => {
-    console.log(purchase);
+  contents.forEach((element) => {
+    console.log(element);
 
     const tempItem = document.querySelector("#cart-item-template").content;
     const itemCopy = tempItem.cloneNode(true);
+
+    const labelEL = itemCopy.querySelector("label");
+    labelEL.textContent = element.name;
+    labelEL.setAttribute("for", element.name);
+
+    const inputEL = itemCopy.querySelector("input");
+    inputEL.id += element.id;
+    inputEL.name = element.name;
+
+    inputEL.value = element.qty;
+
+    const priceEl = itemCopy.querySelector(".price-each span");
+    priceEl.textContent = element.price;
+
     document.querySelector(".cart-content").appendChild(itemCopy);
   });
 }
