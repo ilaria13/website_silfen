@@ -195,9 +195,6 @@ strong {
 }
 
 .bgNavShadow {
-  box-shadow: -4px 14px 36px -3px rgba(156, 156, 156, 0.57) inset;
-  -webkit-box-shadow: -4px 14px 36px -3px rgba(156, 156, 156, 0.57) inset;
-  -moz-box-shadow: -4px 14px 36px -3px rgba(156, 156, 156, 0.57) inset;
   color: rgb(196, 196, 196);
 }
 
