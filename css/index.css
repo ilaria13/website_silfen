@@ -56,7 +56,8 @@ a {
   }
 
   .slide {
-    height: 45vw;
+    display: block;
+    height: 90vh;
     width: 100%;
     object-fit: cover;
     margin: 0;
@@ -70,10 +71,13 @@ a {
 
   #silfenStars img {
     object-fit: cover;
+    display: block;
+    height: 90vh;
+    width: 100%;
   }
   .silfenStarText {
     align-self: flex-end;
     padding: 25px;
-    width: 50%;
+    width: 100%;
   }
 }
