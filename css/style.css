@@ -9,7 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "DM Sans", sans-serif;
-  display: flex;
+ display: flex; 
 }
 
 /* HEADER STARTS*/
@@ -206,4 +206,24 @@ strong {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.hidden {display: none;}
+
+footer {
+  grid-area: fo;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: darkgray;
+  text-align: right;
+  font-size: 0.7em;
+  padding: 1em;
+  position: relative;
+  height: 20px;
+  bottom: 0;
+  width: 92vw;
+  display: flex;
+  justify-content: space-between;
+
+
 }
