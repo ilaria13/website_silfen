@@ -242,10 +242,38 @@ strong {
     writing-mode: vertical-lr;
   }
 
+  /*#nav2 {
+    height: 50%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  */
+
   #nav2 {
     height: 50%;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+  }
+
+  .buttonNav2 {
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(146, 146, 146);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonNav2:hover {
+    color: #000000;
+  }
+
+  .buttonNav2 h2 {
+    writing-mode: vertical-lr;
   }
 
   /*Footer*/
