@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <!--START SIDE NAVIGATION-->
     <div id="navside">
       <div id="nav1" class="bgNav1">
         <button class="buttonNav1"><h2>Silfen</h2></button>
@@ -17,6 +18,7 @@
         <button class="buttonNav2"><h2>Silfen Play</h2></button>
       </div>
     </div>
+    <!--END SIDE NAVIGATION-->
     <div id="wrapper">
       <header>
         <div id="bannerTop">
@@ -29,7 +31,25 @@
             </h5>
           </div>
         </div>
-        <!--END NAVIGATION-->
+        <!--TOP SIDE NAVIGATION-->
+        <div class="topnav">
+          <a href="#home" class="active">
+            <img
+              src="/links/SILFEN-LOGO.png"
+              alt="silfen logo"
+              class="logoMobile"
+            />
+          </a>
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <h5 class="fa fa-bars">MENU</h5>
+          </a>
+        </div>
+
         <nav>
           <ul class="menu">
             <li class="dropdown">
@@ -60,19 +80,24 @@
       </header>
       <!--END NAVIGATION-->
       <main>
+        <h1 class="buttonSlide1">Recycled collection</h1>
         <div id="slideshow">
-          <a href="#"
-            ><img
-              src="links/Bibbi_baltic-sea-1152x1536.jpeg"
-              alt="banner"
-              class="slide"
-          /></a>
-          <a href="#"
-            ><img
-              src="links/Bibbi_baltic-sea-1152x1536.jpeg"
-              alt="banner"
-              class="slide"
-          /></a>
+          <a href="#">
+            <video autoplay loop muted class="slide">
+              <source
+                src="links/silfen_video_landscape_2.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
+          <a href="#" class="video2">
+            <video autoplay loop muted class="slide">
+              <source
+                src="links/silfen_video_landscape_1.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
         </div>
         <section id="collection">
           <h4>discover our collection</h4>
@@ -215,5 +240,6 @@
         </div>
       </footer>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>

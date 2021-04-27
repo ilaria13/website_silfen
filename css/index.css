@@ -1,3 +1,9 @@
+.buttonSlide1 {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  color: #e3ff36;
+}
 #collection {
   background-color: #b3e8ef;
   padding: 5%;
@@ -50,10 +56,105 @@ a {
   grid-gap: 1rem;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 900px) {
+=======
+/*SILFEN STAR*/
+
+.silfenStarText {
+  align-self: flex-end;
+  padding: 25px;
+  width: 50%;
+}
+
+.silfenStarFeed {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  background-color: #aed5b286;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 800px) {
+  .buttonSlide1 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    color: #e3ff36;
+  }
+
+>>>>>>> b3690516febfd67c15c93da57ac14828a7f52bf1
   #slideshow {
     display: flex;
     width: 100%;
+<<<<<<< HEAD
+=======
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .starNew {
+    width: 8vw;
+    height: 8vw;
+    background-repeat: no-repeat;
+    background-image: url(/links/star-new.svg);
+    background-size: 100%;
+  }
+  /*silfen star*/
+  #silfenStars {
+    background-color: #aed5b2;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .silfenStarsImg {
+    background-image: url(/links/146429450_5369015533123765_4170415505502106668_n.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    width: 50%;
+    height: 40vw;
+  }
+
+  .silfenStarsTitle {
+    color: #e3ff36;
+    position: relative;
+    left: 10%;
+    top: 83%;
+  }
+
+  .silfenStarsTitle {
+    font-size: 2.5em;
+  }
+
+  .silfenStarText {
+    align-self: flex-end;
+    padding: 25px;
+    width: 50%;
+  }
+
+  .silfenStarText h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .buttonSlide1 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: #e3ff36;
+  }
+  .video2 {
+    display: none;
+  }
+  #slideshow {
+    display: flex;
+    flex-direction: column;
+>>>>>>> b3690516febfd67c15c93da57ac14828a7f52bf1
   }
 
   .slide {
