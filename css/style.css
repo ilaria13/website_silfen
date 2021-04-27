@@ -221,6 +221,27 @@ strong {
     transform: rotate(180deg);
   }
 
+  .buttonNav1 {
+    height: 100%;
+    border: none;
+    background-color: #7bafd4;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonNav1:hover {
+    color: #e3ff36;
+  }
+
+  .buttonNav1 h2 {
+    writing-mode: vertical-lr;
+  }
+
   #nav2 {
     height: 50%;
     writing-mode: vertical-lr;
