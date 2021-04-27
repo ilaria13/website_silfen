@@ -225,7 +225,7 @@ strong {
     height: 100%;
     border: none;
     background-color: #7bafd4;
-    color: black;
+    color: #e3ff36;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -270,6 +270,7 @@ strong {
 
   .buttonNav2:hover {
     color: #000000;
+    background-color: #e3ff36;
   }
 
   .buttonNav2 h2 {
