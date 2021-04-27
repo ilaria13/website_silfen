@@ -51,21 +51,7 @@ a {
   grid-gap: 1rem;
 }
 
-/*SILFEN STAR
-.silfenStarsImg {
-  background-image: url(/links/146429450_5369015533123765_4170415505502106668_n.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-size: cover;
-  width: 50%;
-  height: 40vw;
-}
-.silfenStarsTitle {
-  color: #e3ff36;
-  position: relative;
-  left: 10%;
-  top: 83%;
-}*/
+/*SILFEN STAR*/
 
 .silfenStarText {
   align-self: flex-end;
@@ -80,6 +66,8 @@ a {
   grid-gap: 0.5rem;
   background-color: #aed5b286;
 }
+
+/*RESPONSIVE*/
 
 @media only screen and (min-width: 800px) {
   #slideshow {
@@ -145,6 +133,15 @@ a {
   #slideshow {
     display: flex;
     flex-direction: column;
+  }
+
+  .slide {
+    display: block;
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
   .starNew {
     width: 15vw;
