@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--START SIDE NAVIGATION-->
     <div id="navside">
       <div id="nav1" class="bgNav1">
         <button class="buttonNav1"><h2>Silfen</h2></button>
@@ -17,6 +18,7 @@
         <button class="buttonNav2"><h2>Silfen Play</h2></button>
       </div>
     </div>
+    <!--END SIDE NAVIGATION-->
     <div id="wrapper">
       <header>
         <div id="bannerTop">
@@ -29,7 +31,25 @@
             </h5>
           </div>
         </div>
-        <!--END NAVIGATION-->
+        <!--TOP SIDE NAVIGATION-->
+        <div class="topnav">
+          <a href="#home" class="active">
+            <img
+              src="/links/SILFEN-LOGO.png"
+              alt="silfen logo"
+              class="logoMobile"
+            />
+          </a>
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
         <nav>
           <ul class="menu">
             <li class="dropdown">
@@ -70,7 +90,7 @@
               />
             </video>
           </a>
-          <a href="#">
+          <a href="#" class="video2">
             <video autoplay loop muted class="slide">
               <source
                 src="links/silfen_video_landscape_1.mp4"
@@ -220,5 +240,6 @@
         </div>
       </footer>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>

@@ -29,6 +29,10 @@ body {
   animation-timing-function: linear;
 }
 
+.scrolling h5 {
+  text-align: center;
+}
+
 @keyframes scrollText {
   0% {
     transform: translateX(-30vw);
@@ -204,6 +208,10 @@ strong {
     flex-direction: row;
   }
 
+  .topnav {
+    display: none;
+  }
+
   #navside {
     align-self: flex-start;
     position: -webkit-sticky;
@@ -315,6 +323,7 @@ strong {
     display: flex;
     flex-direction: column;
   }
+
   #navside {
     position: -webkit-sticky;
     position: sticky;
@@ -399,5 +408,53 @@ strong {
   .social {
     display: flex;
     flex-direction: row;
+  }
+
+  /*BURGER MENU*/
+  nav {
+    display: none;
+  }
+
+  #bannerTop {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+  }
+
+  .logoMobile {
+    width: 30%;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: rgb(224, 221, 221);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #e3ff36;
+    color: black;
+  }
+
+  .active {
+    background-color: #b3e8ef;
   }
 }
