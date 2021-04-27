@@ -76,6 +76,13 @@ a {
 /*RESPONSIVE*/
 
 @media only screen and (min-width: 800px) {
+  .buttonSlide1 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    color: #e3ff36;
+  }
+
   #slideshow {
     display: flex;
     flex-direction: row;
@@ -136,6 +143,13 @@ a {
 }
 
 @media only screen and (max-width: 799px) {
+  .buttonSlide1 {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    color: #e3ff36;
+  }
+
   #slideshow {
     display: flex;
     flex-direction: column;
