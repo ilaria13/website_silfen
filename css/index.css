@@ -56,9 +56,6 @@ a {
   grid-gap: 1rem;
 }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 900px) {
-=======
 /*SILFEN STAR*/
 
 .silfenStarText {
@@ -85,12 +82,9 @@ a {
     color: #e3ff36;
   }
 
->>>>>>> b3690516febfd67c15c93da57ac14828a7f52bf1
   #slideshow {
     display: flex;
     width: 100%;
-<<<<<<< HEAD
-=======
     object-fit: cover;
     margin: 0;
     padding: 0;
@@ -154,7 +148,6 @@ a {
   #slideshow {
     display: flex;
     flex-direction: column;
->>>>>>> b3690516febfd67c15c93da57ac14828a7f52bf1
   }
 
   .slide {
