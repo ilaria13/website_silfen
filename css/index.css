@@ -6,12 +6,12 @@
 }
 #collection {
   background-color: #b3e8ef;
-  padding: 5%;
+  padding: 3%;
 }
 
 #mostWanted {
   background-color: #b3e8efa9;
-  padding: 5%;
+  padding: 3%;
 }
 .collectionList {
   padding: 5%;
@@ -25,6 +25,7 @@
 .starNew {
   width: 8vw;
   height: 8vw;
+  background-repeat: no-repeat;
   background-image: url(/links/star-new.svg);
   background-size: 100%;
 }
@@ -84,6 +85,12 @@ a {
 
   #slideshow {
     display: flex;
+    flex-direction: row;
+  }
+
+  .slide {
+    display: block;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
     margin: 0;
@@ -152,27 +159,44 @@ a {
 
   .slide {
     display: block;
-    height: 45vw;
-    width: 50vw;
+    height: 60vh;
+    width: 100%;
     object-fit: cover;
     margin: 0;
     padding: 0;
   }
+  .starNew {
+    width: 15vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-image: url(/links/star-new.svg);
+    background-size: 100%;
+  }
 
+  /*silfen star*/
   #silfenStars {
     background-color: #aed5b2;
     display: flex;
+    flex-direction: column;
   }
 
-  #silfenStars img {
-    object-fit: cover;
-    display: block;
-    height: 90vh;
+  .silfenStarsImg {
+    background-color: #aed5b2;
     width: 100%;
   }
+
+  .silfenStarsTitle {
+    color: #e3ff36;
+    position: relative;
+    padding: 25px;
+  }
+
   .silfenStarText {
     align-self: flex-end;
     padding: 25px;
-    width: 100%;
+    width: 90%;
+  }
+  .silfenStarText h2 {
+    font-size: 1.5em;
   }
 }
