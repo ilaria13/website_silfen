@@ -22,6 +22,7 @@ function showProducts(products) {
     const template = document.querySelector(".product").content;
     const copy = template.cloneNode(true);
     copy.querySelector(".name").textContent = product.name;
+    copy.querySelector(".productImage").src = product.imgurl1;
     copy.querySelector(".collection").textContent = product.collection;
     copy.querySelector(".colours").textContent = product.color;
     copy.querySelector(".OPrice span").textContent = product.price;
