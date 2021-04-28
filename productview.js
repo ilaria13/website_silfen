@@ -1,6 +1,7 @@
-/* const searchParams = new URLSearchParams(window.location.search);  */
-/* const productId = searchParams.get("products"); */
-fetch("https://silfen-9520.restdb.io/rest/products/608152979df28c5100011952", {
+const searchParams = new URLSearchParams(window.location.search);  
+const productId = searchParams.get("products"); 
+
+fetch("https://silfen-9520.restdb.io/rest/products/"+productId, {
         "method": "GET",
         "headers": {
           "x-apikey": "608278cf28bf9b609975a5b3"
@@ -14,19 +15,17 @@ fetch("https://silfen-9520.restdb.io/rest/products/608152979df28c5100011952", {
       console.error(err);
     });
     
-/* getData(); */
+/*DISPLAY PRODUCT*/ 
 
 function showProducts(product) {
     console.log("hello");
   document.querySelector(".name").textContent = product.name;
   document.querySelector(".collection").textContent = product.collection;
-  /* document.querySelector(".colours").textContent = product.color; */
   document.querySelector(".OPrice span").textContent = product.price;
   document.querySelector(".NewPrice span").textContent = product.newprice;
-/*   document.querySelector("button").dataset.id += product._id; */
-/*   document.querySelector(".productList").appendChild(copy); */
 
 
+/* SELECT COLOR AND CHANGE TO MATCHING IMAGE*/
 /* IMG-URL EXAMPLE: https://annadalsgaard.dk/img/aquamarine_IDA_FRONT.jpg */
 
 document.querySelector(".productImage").src =

@@ -27,7 +27,7 @@ function showProducts(products) {
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;
     copy.querySelector("button").dataset.id += product._id;
-
+    copy.querySelector(".viewProduct").href = `productview.html?products=${product._id}`;
     document.querySelector(".productList").appendChild(copy);
   });
   /*
