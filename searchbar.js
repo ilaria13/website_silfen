@@ -4,21 +4,19 @@
 const form = document.querySelector("form");
 
 console.log(form.elements);
-document.querySelector("button").addEventListener("click", submit);
+document.querySelector(".submit").addEventListener("click", submitSearch);
 
-function submit(e) {
+function submitSearch(e) {
   e.preventDefault();
   //alert(form.elements.query.value);
   const q = form.elements.query.value;
   const url =
-    'https://silfen-9520.restdb.io/rest/products?apikey=608278cf28bf9b609975a5b3&q={"$or": [{"name": {"$regex" : "' +
+    'https://silfen-9520.restdb.io/rest/products?q={"collection": {"$regex" : "' +
     q +
-    '"}}, {"collection": {"$regex" : "' +
-    q +
-    '"}}]}';
+    '"}}';
 
   console.log(url);
-
+  document.querySelector("p").textContent += url;
   fetch(url, {
     method: "GET",
     headers: {
@@ -36,31 +34,26 @@ function submit(e) {
 }
 
 function show(matches, q) {
+  const section = document.querySelector(".searchresults");
+  section.innerHTML = "";
   matches.forEach((match) => {
     console.log(match);
-    const template = document.querySelector(".searchresults").content;
+    const template = document.querySelector(".templatesearch").content;
     const copy = template.cloneNode(true);
 
-    const h2Content = match.name;
-    /*match.username.replaceAll(
+    const h2Content =
+      match.name; /* match.username.replaceAll(
       q,
-      '<span class="red">' + q + "</span>"
+      '<span class="red">' + q + "</span>" 
     );*/
+    const h3Content = match.price;
     console.log(h2Content);
     copy.querySelector("h2").innerHTML = h2Content;
-
-    copy.querySelector("h3").innerHTML = match.collection.replaceAll(
-      q,
-      '<span class="red">' + q + "</span>"
-    );
-    /*  createAndFilter(copy, match, "h3", "email", q); */
-    document.querySelector("section").appendChild(copy);
+    copy.querySelector("h3").innerHTML = h3Content;
+    // copy.querySelector("h3").innerHTML = match.collection.replaceAll(
+    //   q,
+    //   '<span class="red">' + q + "</span>"
+    // );
+    section.appendChild(copy);
   });
-
-  /*  function createAndFilter(copy, match, element, key, q) {
-    copy.querySelector(element).innerHTML = match.key.replaceAll(
-      q,
-      '<span class="red">' + q + "</span>"
-    );
-  }*/
 }
