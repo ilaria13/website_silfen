@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--START SIDE NAVIGATION-->
     <div id="navside">
-      <div id="nav1" class="bgNav1"><h2>Silfen</h2></div>
-      <div id="nav2" class="bgNavShadow"><h2>Silfen Play</h2></div>
+      <div id="nav1" class="bgNav1">
+        <button class="buttonNav1"><h2>Silfen</h2></button>
+      </div>
+      <div id="nav2">
+        <button class="buttonNav2"><h2>Silfen Play</h2></button>
+      </div>
     </div>
+    <!--END SIDE NAVIGATION-->
     <div id="wrapper">
       <header>
         <div id="bannerTop">
@@ -25,10 +31,28 @@
             </h5>
           </div>
         </div>
-        <!--END NAVIGATION-->
+        <!--TOP SIDE NAVIGATION-->
+        <div class="topnav">
+          <a href="#home" class="active">
+            <img
+              src="/links/SILFEN-LOGO.png"
+              alt="silfen logo"
+              class="logoMobile"
+            />
+          </a>
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <h5 class="fa fa-bars">MENU</h5>
+          </a>
+        </div>
+
         <nav>
-          <ul class="menu dropdown">
-            <li>
+          <ul class="menu">
+            <li class="dropdown">
               <a href="">bags</a>
               <div class="dropdown-content">
                 <a href="#">Link 1</a>
@@ -41,7 +65,9 @@
             <li><a href="">#silfenstar</a></li>
           </ul>
           <div id="logo">
-            <a href><img src="links/SILFEN-LOGO.png" alt="silfen logo" /></a>
+            <a href="#"
+              ><img src="links/SILFEN-LOGO.png" alt="silfen logo"
+            /></a>
           </div>
           <ul class="menu dropdown">
             <li><a href="">about</a></li>
@@ -54,19 +80,24 @@
       </header>
       <!--END NAVIGATION-->
       <main>
+        <h1 class="buttonSlide1">Recycled collection</h1>
         <div id="slideshow">
-          <a href="#"
-            ><img
-              src="links/Bibbi_baltic-sea-1152x1536.jpeg"
-              alt="banner"
-              class="slide"
-          /></a>
-          <a href="#"
-            ><img
-              src="links/Bibbi_baltic-sea-1152x1536.jpeg"
-              alt="banner"
-              class="slide"
-          /></a>
+          <a href="#">
+            <video autoplay loop muted class="slide">
+              <source
+                src="links/silfen_video_landscape_2.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
+          <a href="#" class="video2">
+            <video autoplay loop muted class="slide">
+              <source
+                src="links/silfen_video_landscape_1.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
         </div>
         <section id="collection">
           <h4>discover our collection</h4>
@@ -145,21 +176,30 @@
           </div>
         </section>
         <section id="silfenStars">
-          <div>
-            <img
-              src="/links/146429450_5369015533123765_4170415505502106668_n.jpg"
-            />
+          <div class="silfenStarsImg">
+            <h1 class="silfenStarsTitle">#SilfenStars</h1>
           </div>
           <div class="silfenStarText">
             <h2>
               What we do is all about making women feel even more confident.
               #SilfenStars is a state of mind more than anything, a form of self
               expression, everyone is welcome.
-              <h2><strong>#SilfenStars – share your looks with us.</strong></h2>
             </h2>
+            <h2><strong>#SilfenStars – share your looks with us.</strong></h2>
           </div>
         </section>
+        <section class="silfenStarFeed">
+          <img src="/links/IG1.jpg" alt="IG1" />
+          <img src="/links/IG2.jpg" alt="IG1" />
+          <img src="/links/IG3.jpg" alt="IG1" />
+          <img src="/links/IG4.jpg" alt="IG1" />
+          <img src="/links/IG5.jpg" alt="IG1" />
+          <img src="/links/IG6.jpg" alt="IG1" />
+          <img src="/links/IG7.jpg" alt="IG1" />
+          <img src="/links/IG8.jpg" alt="IG1" />
+        </section>
       </main>
+<<<<<<< HEAD
     </div> 
     <!-- FOOTER -->
       <footer> <div class="footerLeft">
@@ -190,4 +230,49 @@
         </footer>
         <script src="newsletter.js"></script>
         </body>
+=======
+      <!--FOOTER-->
+      <footer>
+        <div class="footerColumn">
+          <img src="/links/symbol.svg" alt="IG1" />
+        </div>
+        <div class="footerColumn">
+          <div>
+            <h3>Join our community</h3>
+            <p>
+              Receive email updates on stuff you’ll probably want to know about,
+              including products, launches, and events. Unsubscribe anytime.
+            </p>
+            <form>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                value="name@gmail.com"
+              />
+            </form>
+          </div>
+          <div class="contact">
+            <div>
+              <h5>contact</h5>
+              <h5>gift card</h5>
+            </div>
+            <div>
+              <h5>terms & conditions</h5>
+              <h5>privacy & policy</h5>
+              <h5>delivering & shipping</h5>
+              <h5>returns</h5>
+            </div>
+            <div class="social">
+              <img src="/links/icon_ig.svg" alt="IG1" />
+              <img src="/links/icon_fb.svg" alt="IG1" />
+              <img src="/links/icon_youtube.svg" alt="IG1" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+>>>>>>> master
 </html>

@@ -12,18 +12,23 @@
     <!--cart template-->
     <template id="cart-item-template">
       <div class="cart-item">
-        <label for="ID">Name</label>
-        <input type="number" id="ID" min="0" max="10" maxlength="2" />
-        <p class="price-row"><span>123</span> DKK</p>
-        <p class="price-each"><span>123</span> DKK each</p>
-      </div> </template
-    ><!--END cart template-->
+        <label for="fid-">NAME</label>
+        <button class="minus" type="button">-</button>
+        <input type="number" name="NAME-" id="fid-" min="0" max="20" />
+        <button class="plus" type="button">+</button>
+        <p class="price-row">DKK<span></span></p>
+        <p class="price-each">DKK<span></span> each</p>
+      </div>
+    </template>
+    <!--END cart template-->
     <aside class="cart">
-      <form action="#">
+      <h3>Shopping Cart</h3>
+      <form>
         <div class="cart-content">
-          <h2>the cart is empty</h2>
+          <h4>THE CART IS EMPTY</h4>
         </div>
-        <button type="submit">checkout</button>
+        <!-- .END .cart-content-->
+        <button type="submit">Checkout & pay</button>
       </form>
     </aside>
     <!--
