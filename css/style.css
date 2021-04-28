@@ -9,11 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "DM Sans", sans-serif;
-<<<<<<< HEAD
   display: grid;
-=======
-  /*display: flex;*/
->>>>>>> master
 }
 
 /* HEADER STARTS*/
@@ -184,10 +180,6 @@ a {
 li a:hover {
   text-decoration-line: underline;
   text-decoration-color: #e3ff36;
-<<<<<<< HEAD
-  text-decoration-thickness: 4px;
-=======
->>>>>>> master
 }
 
 strong {
@@ -212,8 +204,7 @@ strong {
 /*RESPONSIVE*/
 @media only screen and (min-width: 750px) {
   body {
-    display: flex;
-    flex-direction: row;
+    display: grid;
   }
 
   .topnav {
@@ -290,7 +281,7 @@ strong {
 
   /*Footer*/
   footer {
-    display: flex;
+    display: grid;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -384,38 +375,6 @@ strong {
   .buttonNav2:hover {
     color: #000000;
     background-color: #e3ff36;
-  }
-  /*FOOTER*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #5989ac;
-    padding: 2%;
-  }
-
-  .footerColumn {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .footerColumn img {
-    width: 5vw;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20%;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: row;
   }
 
   /*BURGER MENU*/
