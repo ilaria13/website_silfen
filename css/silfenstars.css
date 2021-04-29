@@ -1,9 +1,17 @@
+/*Silfen Stars*/
+
 body {
   background-color: #aed5b286;
 }
+main {
+  margin: 2rem 4rem;
+}
 .silfenStarFeed {
-  padding: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
+}
+h3 {
+  width: 60%;
 }
