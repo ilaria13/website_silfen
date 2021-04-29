@@ -84,7 +84,7 @@ a {
   }
 
   #slideshow {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
   }
 
