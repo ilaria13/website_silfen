@@ -18,25 +18,30 @@ h1 {
 h3 {
   width: 60%;
 }
-.starNew {
-  width: 8vw;
-  height: 8vw;
-  background-repeat: no-repeat;
-  background-image: url(/links/star-new.svg);
-  background-size: 100%;
-}
-.rotation {
-  animation-name: rotate;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+.stars span {
+  position: relative;
+  display: inline-block;
+  animation: fadeOut 3s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
-
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
   }
 }
+
+/* @-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
