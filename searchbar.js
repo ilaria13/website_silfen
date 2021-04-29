@@ -16,15 +16,15 @@ function removeHidden() {
   document.querySelector("#searchicon").addEventListener("click", addHidden);
 }
 
-const form = document.querySelector("form");
+const forms = document.querySelector(".searchform");
 
-console.log(form.elements);
+console.log(forms.elements);
 document.querySelector(".submit").addEventListener("click", submitSearch);
 
 function submitSearch(e) {
   e.preventDefault();
   //alert(form.elements.query.value);
-  const q = form.elements.query.value;
+  const q = forms.elements.query.value;
   const url =
     'https://silfen-9520.restdb.io/rest/products?q={"collection": {"$regex" : "' +
     q +
@@ -72,3 +72,11 @@ function show(matches, q) {
     section.appendChild(copy);
   });
 }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
