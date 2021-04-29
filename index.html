@@ -85,7 +85,27 @@
             </li>
 
             <li><a href=""> cart(<span>0</span>)</a></li>
-            <li><a href="">&#128270;</a></li>
+            <li>
+              <a id="searchicon">&#128270;</a>
+            </li>
+            <div id="searchpage" class="searchpage">
+              <form action="#" method="get" role="search">
+                <input
+                  type="text"
+                  name="query"
+                  placeholder="Search silfen.dk"
+                  required
+                /><button class="submit" type="submit">Search</button>
+              </form>
+              <template class="templatesearch">
+                <div class="search-wrapper">
+                  <h2></h2>
+                  <h3></h3>
+                </div>
+              </template>
+
+              <section class="searchresults"></section>
+            </div>
           </ul>
         </nav>
       </header>
@@ -199,5 +219,7 @@
         </section>
       </main>
     </div>
+    <script src="searchbar.js"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>

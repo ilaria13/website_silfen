@@ -1,5 +1,20 @@
 /* key are in urls right now - set as x-apikey in header */
 /* https://s2021-8556.restdb.io/rest/testing?apikey=6034ed655ad3610fb5bb655d&q={}&filter= */
+// document.querySelector(".searchicon").addEventListener("click", searchFunction);
+window.addEventListener("load", addHidden);
+
+function addHidden() {
+  console.log("addHidden()");
+  document.querySelector("#searchpage").classList.add("hidden");
+  document.querySelector("#searchicon").addEventListener("click", removeHidden);
+}
+
+function removeHidden() {
+  console.log("removeHidden()");
+  this.removeEventListener("click", removeHidden);
+  document.querySelector("#searchpage").classList.remove("hidden");
+  document.querySelector("#searchicon").addEventListener("click", addHidden);
+}
 
 const form = document.querySelector("form");
 
