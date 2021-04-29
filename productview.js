@@ -24,7 +24,7 @@ function showProducts(product) {
   document.querySelector(".description").textContent = product.description;
   document.querySelector(".OPrice span").textContent = product.price;
   document.querySelector(".NewPrice span").textContent = product.newprice;
-  
+  document.querySelector("title").textContent = product.name + " " + product.category;
 
 /* SELECT COLOR AND CHANGE TO MATCHING IMAGE*/
 /* IMG-URL EXAMPLE: https://annadalsgaard.dk/img/aquamarine_IDA_FRONT.jpg */
@@ -77,8 +77,8 @@ const options = {
 });
 
 
-console.log(productId);
 
+ 
 
 function showRelatedProducts(relatedProducts) {
   relatedProducts.forEach((product) => {
@@ -87,10 +87,23 @@ function showRelatedProducts(relatedProducts) {
     copy.querySelector(".name").textContent = product.name;
     copy.querySelector(".productImage").src = product.imgurl1;
     copy.querySelector(".collection").textContent = product.collection;
-    copy.querySelector(".colours").textContent = product.color;
+    product.color.forEach((color) => {
+      const div = document.createElement("div");
+    div.style.background = color;
+    div.addEventListener("click", function() {
+      /* relatedProducts.forEach(() => */
+      /* console.log(this); */
+      /* this.parentNode.classList.contains("sockShake")) */
+      this.parents.classList.contains(".relatedProductImage").src ="https://annadalsgaard.dk/img/" +
+      color + product.basename });
+    copy.querySelector(".colorpicker2").appendChild(div);
+  })
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;
     copy.querySelector("button").dataset.id += product._id;
     copy.querySelector(".viewProduct").href = `productview.html?products=${product._id}`;
     document.querySelector(".otherProducts").appendChild(copy);
+
+  
   })}
+

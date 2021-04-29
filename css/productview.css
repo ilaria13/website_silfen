@@ -21,10 +21,24 @@ height: 1.5em;
 border-radius: 7.5em;
 margin:1em 1em 1em 0em;}
 
+
+/* RELATED COLOR PICKER*/
+.colorpicker2 > * {
+width:1.5em;
+height: 1.5em;
+border-radius: 7.5em;
+margin:1em 1em 1em 0em;}
+
 .otherProducts {
   display: flex;
 }
 
 .otherProducts {display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-gap: 1rem;}
+  grid-gap: 1em;}
+
+
+  @media only screen and (max-width: 700px) {
+    .otherProducts {display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-gap: 1em;}}
