@@ -1,11 +1,30 @@
-/* ANNA TESTING BELOW*/
+body {margin: 4em}
 
+h1 {font-size: 2em;}
+h2 {font-size: 1em;}
+
+/* DISPLAY PRODUCT */
+.saleItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  margin-bottom: 2em;
+}
+
+.detailItem > * {margin-bottom: 0.5em;}
+
+/* COLOR PICKER*/
 .colorpicker {display: flex;}
-
 .colorpicker > * {
-  width:2em;
-height: 2em;
-border-radius: 1em;
-margin: 1em;}
+  width:1.5em;
+height: 1.5em;
+border-radius: 7.5em;
+margin:1em 1em 1em 0em;}
 
+.otherProducts {
+  display: flex;
+}
 
+.otherProducts {display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 1rem;}

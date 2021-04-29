@@ -12,12 +12,12 @@
         <img
           class="productImage"
         />
-        <div class="colorpicker"></div>
         <div class="detailItem">
-          <h3 class="name"></h3>
-          <p class="collection">Collection</p>
-
+          <h1 class="name"></h1>
+          <h2 class="collection">Collection</h2>
+          <p class="description"></p>
           <div class="addToBag">
+            <div class="colorpicker"></div>
             <div class="price">
               <h3 class="OPrice"><span>400,00</span>DKK</h3>
               <h3 class="NewPrice"><span>400,00</span></h3>
@@ -25,12 +25,32 @@
             <button data-id="id-">shop</button>
           </div>
         </div>
+        </div>
       </article>
+      <template class="otherProductsTem">
+        <article class="otherSaleItem">
+          <a class="viewProduct" href=""><img
+            class="productImage"
+            alt="Blue T20 Indian Cricket Jersey"
+          /></a>
+          <div class="detailItem">
+            <h3 class="name">Title product</h3>
+            <p class="collection">Collection</p>
+            <div class="colours">green</div>
+            <div class="addToBag">
+              <div class="price">
+                <h3 class="OPrice"><span>400,00</span>DKK</h3>
+                <h3 class="NewPrice"><span>400,00</span></h3>
+              </div>
+              <button data-id="id-">shop</button>
+            </div>
+          </div>
+        </article>
+      </template>
     <main>
-      <div class="pagTitle">
-        <h1>bags xxxx</h1>
-      </div>
       <section class="productList"></section>
+      <h2>You may also like</h2>
+      <div class="otherProducts"></div>
     </main>
     <script src="/productview.js"></script>
   </body>
