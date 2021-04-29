@@ -1,7 +1,7 @@
 /*Silfen Stars*/
 
 body {
-  background-color: #aed5b286;
+  background-color: #7bafd4;
 }
 main {
   margin: 2rem 4rem;
@@ -12,6 +12,31 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
 }
+h1 {
+  color: #e3ff36;
+}
 h3 {
   width: 60%;
+}
+.starNew {
+  width: 8vw;
+  height: 8vw;
+  background-repeat: no-repeat;
+  background-image: url(/links/star-new.svg);
+  background-size: 100%;
+}
+.rotation {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

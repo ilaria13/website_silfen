@@ -1,8 +1,13 @@
-main {
-  margin: 2rem 4rem;
+.div1 {
+  padding: 2rem 4rem;
+}
+.div2 {
+  padding: 2rem 4rem;
+  background-color: #b3e8ef;
 }
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 .container {
