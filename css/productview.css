@@ -1,24 +1,32 @@
 body {
-  margin: 4em;
+  padding: 4em;
+  background-color: rgb(236, 236, 236);
+}
+
+h1.name {
+  margin-bottom: 0;
 }
 
 h2 {
-  font-size: 1em;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+h4 {
+  margin-bottom: 2em;
+  padding: 0;
 }
 
 /* DISPLAY PRODUCT */
-.saleItem {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2em;
-  margin-bottom: 2em;
-}
 
 .hidden {
   display: none;
 }
 
 /*BUTTON SHOP*/
+
+.button {
+  margin-top: 3rem;
+}
 
 button {
   float: left;
@@ -72,11 +80,26 @@ button {
 }
 
 .otherProducts {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 2rem;
+  grid-gap: 3rem;
 }
 
-.otherProducts {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-gap: 1rem;
+@media only screen and (min-width: 850px) {
+  .saleItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .saleItem {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2em;
+  }
 }
