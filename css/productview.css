@@ -89,6 +89,11 @@ button {
   grid-gap: 3rem;
 }
 
+.colours {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
 @media only screen and (min-width: 850px) {
   .saleItem {
     display: grid;
