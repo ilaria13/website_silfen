@@ -5,8 +5,9 @@ body {
 }
 
 p {
-  font-size: 2.1em;
-  text-align: justify;
+  font-size: 1em;
+  /* text-align: justify; */
+  line-height: 1.6em;
 }
 
 .container {
@@ -33,22 +34,18 @@ p {
 }
 
 section {
+  padding: 50px;
   text-align: left;
-  margin-left: 10%;
-  margin-right: 60%;
+  display: flex;
+  /* margin-left: 10%;
+  margin-right: 60%; */
+  grid-gap: 3em;
 }
 
 h3 {
-  margin-top: 30%;
   text-align: center;
 }
 
 #bagpic {
-  position: absolute;
-  top: 1000px;
-  right: 16px;
-  max-width: 1%;
-  max-height: 1%;
-  margin-right: 40%;
-  padding-right: 15%;
+  padding: 20px;
 }
