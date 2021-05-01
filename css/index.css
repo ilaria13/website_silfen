@@ -13,6 +13,61 @@
   background-color: #b3e8efa9;
   padding: 3%;
 }
+.name {
+  font-size: 2em;
+}
+.collection {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.colours {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/*BUTTON SHOP*/
+
+button {
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.add-button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: black;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition-duration: 0.4s;
+  margin-top: em;
+}
+
+.add-button span {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.shop-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition-duration: 0.4s;
+  margin-top: em;
+}
+
+.shop-button:hover {
+  background-color: #e3ff36;
+  border: solid 1px#e3ff36;
+  color: black;
+}
+
+/*END MOST WANTED*/
 
 .collectionList {
   padding: 5%;
