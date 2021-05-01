@@ -662,7 +662,7 @@ input.submit-button:hover {
 }
 
 /*SEARCH*/
-form {
+.searchform {
   padding-right: 3%;
   float: right;
   /* transform: scale(1.5); */
