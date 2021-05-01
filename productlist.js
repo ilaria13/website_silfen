@@ -61,8 +61,6 @@ function showProducts(products) {
     document.querySelector(".productList").appendChild(copy);
   });
 
-  /*LINKING UP COLLECTIONS AND CATEGORIES*/
-
   /*
   const CART = {
     contents: [],
@@ -144,14 +142,14 @@ CART.init();
           {
             _id: "2",
             img: "nonoe",
-            qty: 3,
+            qty: 2,
             name: "Hej there",
             price: 500,
           },
           {
             _id: "3",
             img: "nonoe",
-            qty: 2,
+            qty: 3,
             name: "Hej there",
             price: 500,
           },
