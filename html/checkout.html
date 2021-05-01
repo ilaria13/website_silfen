@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="/css/checkout.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/checkout.css">
 
 </head>
 <body>
@@ -86,9 +86,15 @@
               <li><a href="">#silfenstar</a></li>
               <li>
                 <div id="logo">
+<<<<<<< HEAD
                   <a href="#"
                     ><img src="/links/SILFEN-LOGO.png" alt="silfen logo"
                   /></a>
+=======
+               <!--    <a href="#"
+                    ><img src="links/SILFEN-LOGO.png" alt="silfen logo"
+                  /></a> -->
+>>>>>>> origin/checkout-saturday
                 </div>
               </li>
               <li class="dropdown">
@@ -134,16 +140,29 @@
             </ul>
           </nav>
         </header>
+        <!-- HEADER ENDS -->
+
     <main>
+        
         <section>
-            <h1>Who is placing this order?</h1>
-            <form class="info">
+            <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active">Info</div>
+                <div class="circle active">Shipping</div>
+                <div class="circle active">Payment</div>
+                <div class="circle active hidden"></div>
+            </div></div>
+            <div class="mask">
+                <div id="formContainer">
+            <form class="info" id="info">
+                <h1>Who is placing this order?</h1>
             <div class="search">
               <input type="email" name="name" autocomplete="off" required placeholder="kamillajensen@mail.com">
               <label  for="name" class="label-name"> 
               <span class="content-name">Email</span>
           </div>
-          <div>
+    
           <div class="fullName"><div class="firstName" >
               <input type="text" name="name" autocomplete="off" required placeholder="Kamilla">
               <label  for="name" class="label-name"> 
@@ -155,13 +174,66 @@
               <span class="content-name">Last name</span>   
           </div></div>
       </form>
-      
-          <button>Proceed to shipping</button>
-          <div style="display:none;" id="myDiv" class="animate-bottom">
-          
-          </section>
-      
+      <form class="info" id="info">
+        <h1>Where would you like your order sent to? </h1>
+    <div class="search">
+      <input type="email" name="name" autocomplete="off" required placeholder="Danmark">
+      <label  for="name" class="label-name"> 
+      <span class="content-name">Country</span>
+  </div>
+  <div class="search">
+    <input type="email" name="name" autocomplete="off" required placeholder="Vejnavn 10">
+    <label  for="name" class="label-name"> 
+    <span class="content-name">Adress</span>
+</div>
+  <div class="fullName"><div class="firstName" >
+      <input type="text" name="name" autocomplete="off" required placeholder="København">
+      <label  for="name" class="label-name"> 
+      <span class="content-name">City</span>   
+  </div>
+  <div class="lastName">
+      <input type="text" name="name" autocomplete="off" required placeholder="2200">
+      <label  for="name" class="label-name"> 
+      <span class="content-name">Zip code</span>   
+  </div></div>
+</form>
+<form class="info" id="info">
+    <h1>How would you like to pay?</h1>
+    <label class="container">Credit card
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Mobile Pay
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Gidt card
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+<div class="search">
+  <input type="text" name="name" autocomplete="off" required placeholder="XXXX-XXXX-XXXX">
+  <label  for="name" class="label-name"> 
+  <span class="content-name">Card Number</span>
+</div>
+<div class="fullName"><div class="firstName" >
+  <input type="text" name="name" autocomplete="off" required placeholder="DD-MM-YYYY">
+  <label  for="name" class="label-name"> 
+  <span class="content-name">Expiration</span>   
+</div>
+<div class="lastName">
+  <input type="text" name="name" autocomplete="off" required placeholder="XXX">
+  <label  for="name" class="label-name"> 
+  <span class="content-name">CVV</span>   
+</div></div>
+</form>
+</div>
+<button class="btn" id="prev" disabled>BACK</button>
+<button class="btn" id="next" >NEXT</button>
 
+          <div style="display:none;" id="myDiv" class="animate-bottom">
+          </section> 
+      <aside class="cartOverview">CART OVERVIEW GOES HERE</aside>
 </main>
     <!-- FOOTER -->
     <footer> <div class="footerLeft">
@@ -191,7 +263,12 @@
         </div>
         </footer>
 <script src="/checkout.js"></script>
+<<<<<<< HEAD
 <script src="/newsletter.js"></script>
     <script src="/searchbar.js"></script>
+=======
+<!-- <script src="/newsletter.js"></script>
+    <script src="/searchbar.js"></script> -->
+>>>>>>> origin/checkout-saturday
 </body>
 </html>
