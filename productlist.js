@@ -1,5 +1,32 @@
+const urlParams = new URLSearchParams(window.location.search);
+const collectionFromUrl = urlParams.get("collection");
+const categoryFromUrl = urlParams.get("category");
+const bestsellerFromUrl = urlParams.get("bestseller");
+
+let url = "https://silfen-9520.restdb.io/rest/products";
+
+if (categoryFromUrl) {
+  url =
+    "https://silfen-9520.restdb.io/rest/products" +
+    '?q={"category":"' +
+    categoryFromUrl +
+    '"}';
+  console.log(url);
+}
+if (collectionFromUrl) {
+  url =
+    'https://silfen-9520.restdb.io/rest/products?q={"collection":"' +
+    collectionFromUrl +
+    '"}';
+  console.log(url);
+}
+if (bestsellerFromUrl) {
+  url = 'https://silfen-9520.restdb.io/rest/products?q={"bestseller":"YES"}';
+  console.log(url);
+}
+
 function getData() {
-  fetch("https://silfen-9520.restdb.io/rest/products", {
+  fetch(url, {
     method: "GET",
     headers: {
       "x-apikey": "608278cf28bf9b609975a5b3",
@@ -28,9 +55,14 @@ function showProducts(products) {
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;
     copy.querySelector("button").dataset.id += product._id;
-    copy.querySelector(".viewProduct").href = `productview.html?products=${product._id}`;
+    copy.querySelector(
+      ".viewProduct"
+    ).href = `productview.html?products=${product._id}`;
     document.querySelector(".productList").appendChild(copy);
   });
+
+  /*LINKING UP COLLECTIONS AND CATEGORIES*/
+
   /*
   const CART = {
     contents: [],

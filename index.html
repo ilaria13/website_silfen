@@ -57,26 +57,26 @@
               <a href="">bags</a>
               <ul class="dropdown1">
                 <li><a href="/html/productlist.html">Shop All</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Best Sellers</a></li>
+                <li><a href="/html/productlist.html?newarrival=true">New Arrivals</a></li>
+                <li><a href="/html/productlist.html?bestseller">Best Sellers</a></li>
                 <li class="category">
                   <a href="#">Category +</a>
                   <ul class="dropdown2">
-                    <li><a href="#">Crossbody Bags</a></li>
-                    <li><a href="#">Shoulder Bags</a></li>
-                    <li><a href="#">Bumbags</a></li>
-                    <li><a href="#">Mini Bags</a></li>
-                    <li><a href="#">Tote Bags</a></li>
-                    <li><a href="#">Wallets</a></li>
-                    <li><a href="#">Cleaning Product</a></li>
+                    <li><a href="/html/productlist.html?category=crossbody">Crossbody Bags</a></li>
+                    <li><a href="/html/productlist.html?category=shoulder">Shoulder Bags</a></li>
+                    <li><a href="/html/productlist.html?category=bum">Bumbags</a></li>
+                    <li><a href="/html/productlist.html?category=mini">Mini Bags</a></li>
+                    <li><a href="/html/productlist.html?category=tote">Tote Bags</a></li>
+                    <li><a href="/html/productlist.html?category=wallet">Wallets</a></li>
+                    <li><a href="/html/productlist.html?category=cleaning">Cleaning Product</a></li>
                   </ul>
                 </li>
                 <li class="collections">
                   <a href="#">Collections +</a>
                   <ul class="dropdown3">
-                    <li><a href="productlist.html?collection=Fairytale">Fairytale</a></li>
-                    <li><a href="#">Snow Queen</a></li>
-                    <li><a href="#">Recycled</a></li>
+                    <li><a href="html/productlist.html?collection=fairytale">Fairytale</a></li>
+                    <li><a href="html/productlist.html?collection=snowqueen">Snow Queen</a></li>
+                    <li><a href="html/productlist.html?collection=recycled">Recycled</a></li>
                   </ul>
                 </li>
                 <li><a href="#">Gift Card</a></li>
@@ -142,7 +142,7 @@
           <a href="#">
             <video autoplay loop muted class="slide">
               <source
-                src="links/silfen_video_landscape_2.mp4"
+                src="/links/silfen_video_landscape_2.mp4"
                 type="video/mp4"
               />
             </video>
@@ -150,7 +150,7 @@
           <a href="#" class="video2">
             <video autoplay loop muted class="slide">
               <source
-                src="links/silfen_video_landscape_1.mp4"
+                src="/links/silfen_video_landscape_1.mp4"
                 type="video/mp4"
               />
             </video>
@@ -160,77 +160,43 @@
           <h4>discover our collection</h4>
           <div class="collectionList">
             <div class="newCollection">
-              <h1><a href="#">01.04.21 Fairytail</a></h1>
+              <h1><a href="/html/productlist.html?collection=fairytale">01.04.21 Fairytale</a></h1>
               <div class="starNew rotation"></div>
             </div>
-            <h1><a href="#">30.10.20 Fairytail</a></h1>
-            <h1><a href="#">15.02.20 Recylced</a></h1>
+            <h1><a href="/html/productlist.html?collection=snowqueen">30.10.20 Snow Queen</a></h1>
+            <h1><a href="/html/productlist.html?collection=recycled">15.02.20 Recycled</a></h1>
           </div>
         </section>
         <section id="mostWanted">
           <h4>shop the most wanted bags</h4>
-          <div class="mostWantedArticles">
-            <article>
-              <img
-                class="productImage"
-                src="/links/516910_TROPICAL-BREE_FRONT.jpeg"
-                alt="Blue T20 Indian Cricket Jersey"
-              />
-              <div class="detailItem">
-                <h3 class="name">Title product</h3>
-                <p class="collection">Collection</p>
-                <div class="colours">green</div>
-                <div class="quantity">1</div>
-                <div class="addToBag">
-                  <div class="price">
-                    <h3 class="OPrice"><span>400,00</span>DKK</h3>
-                    <h3 class="NewPrice"><span>400,00</span></h3>
+            <article class="mwbag">
+            <template class="mwtemplate">
+              <article class="saleItem">
+                <a class="viewProduct" href=""
+                  ><img class="productImage" alt="Pretty Pretty Princess"
+                /></a>
+                <div class="detailItem">
+                  <h3 class="name">Title product</h3>
+                  <h4 class="collection">Collection</h4>
+                  <div class="colours">green</div>
+        
+                  <div class="addToBag">
+                    <div class="price">
+                      <h3 class="OPrice"><span>400,00</span>DKK</h3>
+                      <h3 class="NewPrice hidden"><span>400,00</span></h3>
+                    </div>
+                    <div class="button">
+                      <button data-id="id-" class="add-button">
+                        – <span>1</span> +
+                      </button>
+                      <button data-id="id-" class="shop-button">
+                        add to cart – 499 DKK
+                      </button>
+                    </div>
                   </div>
-                  <a href=""><h3 class="shop">shop</h3></a>
                 </div>
-              </div>
-            </article>
-            <article>
-              <img
-                class="productImage"
-                src="/links/516910_TROPICAL-BREE_FRONT.jpeg"
-                alt="Blue T20 Indian Cricket Jersey"
-              />
-              <div class="detailItem">
-                <h3 class="name">Title product</h3>
-                <p class="collection">Collection</p>
-                <div class="colours">green</div>
-                <div class="quantity">1</div>
-                <div class="addToBag">
-                  <div class="price">
-                    <h3 class="OPrice"><span>400,00</span>DKK</h3>
-                    <h3 class="NewPrice"><span>400,00</span></h3>
-                  </div>
-                  <a href=""><h3 class="shop">shop</h3></a>
-                </div>
-              </div>
-            </article>
-            <article>
-              <img
-                class="productImage"
-                src="/links/516910_TROPICAL-BREE_FRONT.jpeg"
-                alt="Blue T20 Indian Cricket Jersey"
-              />
-              <div class="detailItem">
-                <h3 class="name">Title product</h3>
-                <p class="collection">Collection</p>
-                <div class="colours">green</div>
-                <div class="quantity">1</div>
-                <div class="addToBag">
-                  <div class="price">
-                    <h3 class="OPrice"><span>400,00</span>DKK</h3>
-                    <h3 class="NewPrice"><span>400,00</span></h3>
-                  </div>
-                  <a href=""><h3 class="shop"></h3>shop</h3></a>
-                </div>
-              </div>
-            </article>
-          </div>
+              </article>
+            </template></article>
         </section>
         <section id="silfenStars">
           <div class="silfenStarsImg">
@@ -286,6 +252,7 @@
         </footer></div></div>
     <script src="newsletter.js"></script>
     <script src="searchbar.js"></script>
+    <script src="index.js"></script>
     <!-- <script src="index.js"></script> -->
   </body>
 </html>
