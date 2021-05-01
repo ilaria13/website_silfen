@@ -1,6 +1,8 @@
 body {
 }
 
+h1 {font-size: 2.5;}
+
 main {
   width: 100VW;
   display: grid;
@@ -20,6 +22,9 @@ form > * {
   margin-top: 1em;
 }
 
+.finalCheckout h1 {padding-top: 1em;}
+
+.finalCheckout > * {padding-bottom: 1em;}
 
 
 .firstName,
@@ -181,7 +186,7 @@ section {
   background-color: white;
 }
 
-.container {
+.progressPlacement{
   padding-bottom: 0em;
 }
 
@@ -191,8 +196,9 @@ section {
 
 #formContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 300%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  width: 400%;
   transition: 0.4s ease;
 }
 
@@ -274,3 +280,6 @@ section {
 	background: white;
 }
 
+.dissapear {opacity: 0;
+  transition: all 0.28s ease;
+}

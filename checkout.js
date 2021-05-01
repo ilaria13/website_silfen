@@ -12,12 +12,16 @@ update();
 
 next.addEventListener("click", ()=> {
   currentActive++;
-  /* document.querySelector(".info").classList.add("clickNext"); */
-  formContainer.style.transform = "translateX(" + ((currentActive -1) * (-33.3)) + "%)";
+
+  formContainer.style.transform = "translateX(" + ((currentActive -1) * (-26.25)) + "%)";
   
   if (currentActive > 3) 
   {
     currentActive = 3;
+    prev.classList.add("dissapear");
+    next.classList.add("dissapear");
+    document.querySelector(".progressPlacement").classList.add("dissapear");
+    
   }
 
   if (currentActive > circles.length) 
@@ -31,7 +35,7 @@ next.addEventListener("click", ()=> {
 
 
 prev.addEventListener("click", ()=> {
-  formContainer.style.transform = "translateX(" + ((currentActive -2) * (-33.3)) + "%)";
+  formContainer.style.transform = "translateX(" + ((currentActive -2) * (-26.25)) + "%)";
   currentActive--;
 
   
