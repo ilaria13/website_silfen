@@ -47,7 +47,9 @@ body {
 }
 
 /*navigation*/
-
+.hidden {
+  display: none;
+}
 nav {
   padding: 0;
   display: grid;
@@ -68,7 +70,12 @@ nav {
   justify-self: center;
   width: 10em;
 }
-
+.together {
+  display: flex;
+}
+#searchicon {
+  padding-left: 14px;
+}
 /* Dropdown*/
 
 .dropdown1 {
@@ -264,7 +271,7 @@ strong {
     margin: 0;
     /* display: flex; */
     flex-direction: column;
-    height: 100px;
+    height: 0;
     /* width: 7%; */
     text-align: center;
     z-index: 99;
@@ -479,10 +486,6 @@ strong {
     height: 6em;
     /* margin-bottom: 18em; */
   }
-}
-
-.hidden {
-  display: none;
 }
 
 /*FOOTER*/
