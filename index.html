@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <div class="wrapper">
     <!--START SIDE NAVIGATION-->
     <div id="navside">
       <div id="nav1" class="bgNav1">
@@ -19,7 +20,7 @@
       </div>
     </div>
     <!--END SIDE NAVIGATION-->
-    <div id="wrapper">
+    <div class="main">
       <header>
         <div id="bannerTop">
           <div class="scrolling">
@@ -254,10 +255,21 @@
           <img src="/links/IG7.jpg" alt="IG1" />
           <img src="/links/IG8.jpg" alt="IG1" />
         </section>
-      </main>
-    </div> 
+      </main> 
     <!-- FOOTER -->
-      <footer> <div class="footerLeft">
+      <footer> <div class="footerRight">
+        <h3 class="nlh3">Join our community!<h3> 
+        <p class="nlp">Receive email updates on stuff you’ll probably want to know about, including products, launches, and events. Unsubscribe anytime.
+        </p>
+        <form class="nlForm">
+            <input type="email" name="email" class="email" autocomplete="off" required placeholder="Your email">
+            <label  for="email" class="label-name"> 
+            <input type="submit" class="submit-button" value="SUBMIT">
+            <p class="hidden">Your email has been submitted!</p></form>
+          <ul class=footerLinks><li> <a href="">TERMS AND CONDITIONS</a></li><li><a href="">DELIVERY AND SHIPPING</a></li><li><a href="">PRIVACY POLICY</a></li><li><a href="">RETURNS</a></li>
+          </ul>
+          </div>
+          <div class="footerLeft">
         <div class="icon"><img
           src="/links/SILFEN-ICON.svg"
         /></div> 
@@ -270,19 +282,8 @@
           <li><a href=""><img src="/links/youtube-social.png" alt="Youtube icon"></a></li>
         </ul>
      </div>
-    <div class="footerRight">
-      <h3 class="nlh3">Join our community!<h3> 
-      <p class="nlp">Receive email updates on stuff you’ll probably want to know about, including products, launches, and events. Unsubscribe anytime.
-      </p>
-      <form class="nlForm">
-          <input type="email" name="email" class="email" autocomplete="off" required placeholder="Your email">
-          <label  for="email" class="label-name"> 
-          <input type="submit" class="submit-button" value="SUBMIT">
-          <p class="hidden">Your email has been submitted!</p></form>
-        <ul class=footerLinks><li> <a href="">TERMS AND CONDITIONS</a></li><li><a href="">DELIVERY AND SHIPPING</a></li><li><a href="">PRIVACY POLICY</a></li><li><a href="">RETURNS</a></li>
-        </ul>
-        </div>
-        </footer>
+    
+        </footer></div></div>
     <script src="newsletter.js"></script>
     <script src="searchbar.js"></script>
     <!-- <script src="index.js"></script> -->
