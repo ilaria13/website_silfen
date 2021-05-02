@@ -2,6 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const collectionFromUrl = urlParams.get("collection");
 const categoryFromUrl = urlParams.get("category");
 const bestsellerFromUrl = urlParams.get("bestseller");
+const newarrivalFromUrl = urlParams.get("newarrival");
 
 let url = "https://silfen-9520.restdb.io/rest/products";
 
@@ -21,7 +22,11 @@ if (collectionFromUrl) {
   console.log(url);
 }
 if (bestsellerFromUrl) {
-  url = 'https://silfen-9520.restdb.io/rest/products?q={"bestseller":"YES"}';
+  url = 'https://silfen-9520.restdb.io/rest/products?q={"bestseller": true}';
+  console.log(url);
+}
+if (newarrivalFromUrl) {
+  url = 'https://silfen-9520.restdb.io/rest/products?q={"newarrival": true}';
   console.log(url);
 }
 

@@ -1,5 +1,5 @@
 const url =
-  'https://silfen-9520.restdb.io/rest/products?q={"collection":"fairytale"}&max=3';
+  'https://silfen-9520.restdb.io/rest/products?q={"bestseller": true}&max=3';
 
 function getData() {
   fetch(url, {
