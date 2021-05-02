@@ -33,13 +33,13 @@ p {
   color: black;
 }
 
-section {
+.top {
   padding: 50px;
   text-align: left;
   display: flex;
-  /* margin-left: 10%;
-  margin-right: 60%; */
   grid-gap: 5em;
+  align-items: center;
+  justify-content: center;
 }
 
 h3 {
@@ -53,5 +53,39 @@ h3 {
   width: 800px;
 }
 
-
-
+.image {
+  flex-basis: 40%;
+}
+.careSteps {
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+.tipgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.tiprow {
+  padding-left: 10%;
+  padding-right: 50%;
+  padding-top: 8em;
+  display: flex;
+  grid-column-gap: 8em;
+}
+.tips {
+  display: block;
+  grid-area: text;
+}
+.number {
+  grid-area: num;
+}
+.tiprow2 {
+  padding-right: 10%;
+  padding-left: 48%;
+  padding-top: 8em;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8em;
+}
