@@ -85,6 +85,7 @@ button {
 .colorpicker2 {
   display: flex;
 }
+
 /* RELATED COLOR PICKER*/
 .colorpicker2 > * {
 width:1.5em;
