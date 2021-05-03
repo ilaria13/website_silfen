@@ -83,6 +83,7 @@ function showRelatedProducts(relatedProducts) {
     const copy = template.cloneNode(true);
     copy.querySelector(".name").textContent = product.name;
     copy.querySelector(".productImage").src = product.imgurl1;
+    copy.querySelector(".productImage").alt = product.name + " " + "color";
     copy.querySelector(".collection").textContent = product.collection;
     product.color.forEach((color) => {
       const div = document.createElement("div");
@@ -92,7 +93,7 @@ function showRelatedProducts(relatedProducts) {
       var relatedImg = this.parentNode.previousElementSibling.firstElementChild;
    relatedImg.src ="https://annadalsgaard.dk/img/" +
       color + product.basename});
-    copy.querySelector(".colorpicker2").appendChild(div); 
+    copy.querySelector(".colorpicker").appendChild(div); 
   })
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;

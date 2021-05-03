@@ -29,6 +29,19 @@ h4 {
   grid-gap: 3rem;
 }
 
+/* COLOR PICKER*/
+.colorpicker {
+  display: flex;
+  margin-left: 20px;
+}
+.colorpicker > * {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 7.5em;
+  margin: 1em 1em 1em 0em;
+}
+
+
 /*ARTICLE*/
 article {
   background-color: #b3e8ef;
