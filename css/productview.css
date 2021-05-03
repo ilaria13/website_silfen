@@ -82,6 +82,14 @@ button {
   margin: 1em 1em 1em 0em;
 }
 
+
+/* RELATED COLOR PICKER*/
+.colorpicker2 > * {
+width:1.5em;
+height: 1.5em;
+border-radius: 7.5em;
+margin:1em 1em 1em 0em;}
+
 .otherProducts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
