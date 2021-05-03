@@ -77,9 +77,6 @@ const options = {
 });
 
 
-
- 
-
 function showRelatedProducts(relatedProducts) {
   relatedProducts.forEach((product) => {
     const template = document.querySelector(".otherProductsTem").content;
@@ -91,12 +88,11 @@ function showRelatedProducts(relatedProducts) {
       const div = document.createElement("div");
     div.style.background = color;
     div.addEventListener("click", function() {
-      /* relatedProducts.forEach(() => */
-      /* console.log(this); */
-      /* this.parentNode.classList.contains("sockShake")) */
-      this.parents.classList.contains(".relatedProductImage").src ="https://annadalsgaard.dk/img/" +
-      color + product.basename });
-    copy.querySelector(".colorpicker2").appendChild(div);
+      //Messy way of adding the picture matching the clicked color to the right place
+      var relatedImg = this.parentNode.previousElementSibling.firstElementChild;
+   relatedImg.src ="https://annadalsgaard.dk/img/" +
+      color + product.basename});
+    copy.querySelector(".colorpicker2").appendChild(div); 
   })
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;
@@ -104,6 +100,5 @@ function showRelatedProducts(relatedProducts) {
     copy.querySelector(".viewProduct").href = `productview.html?products=${product._id}`;
     document.querySelector(".otherProducts").appendChild(copy);
 
-  
   })}
 
