@@ -328,6 +328,7 @@ button {
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin: 0;
   }
 
   .buttonNav1:hover {
@@ -357,6 +358,7 @@ button {
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin: 0;
   }
 
   .buttonNav2:hover {
@@ -485,6 +487,7 @@ button {
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin: 0;
   }
 
   .buttonNav1:hover {
@@ -506,6 +509,7 @@ button {
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin: 0;
   }
 
   .buttonNav2:hover {
@@ -526,6 +530,7 @@ button {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     position: relative;
+    z-index: 5;
   }
 
   .logoMobile {
