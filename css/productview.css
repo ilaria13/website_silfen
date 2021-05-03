@@ -82,7 +82,9 @@ button {
   margin: 1em 1em 1em 0em;
 }
 
-
+.colorpicker2 {
+  display: flex;
+}
 /* RELATED COLOR PICKER*/
 .colorpicker2 > * {
 width:1.5em;
