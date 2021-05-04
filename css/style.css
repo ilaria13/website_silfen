@@ -242,9 +242,64 @@ strong {
 /*CART*/
 .cart {
   position: absolute;
-  top: 0;
+  top: 80px;
   right: 0;
-  background-color: crimson;
+  background-color: white;
+  padding: 40px;
+  display: block;
+}
+
+.cart h3 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+.cart form {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cart input {
+  font-size: 1em;
+  font-weight: 500;
+  width: 20px;
+  border-bottom: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.cart button {
+  font-size: 1em;
+  border: none;
+}
+.cart button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.display-flex {
+  display: flex;
+}
+.cart .price-each {
+  border-bottom: 2px solid black;
+  margin-top: 0;
+  padding-bottom: 15px;
+}
+.cart .label2 {
+  margin-top: 10px;
+  font-size: 1em;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 400;
 }
 
 /*SEARCH*/
