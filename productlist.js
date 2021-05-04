@@ -12,7 +12,6 @@
 }; */
 /*LOADER END */
 
-
 const urlParams = new URLSearchParams(window.location.search);
 const collectionFromUrl = urlParams.get("collection");
 const categoryFromUrl = urlParams.get("category");
@@ -55,21 +54,18 @@ function getData() {
     },
   })
     .then((res) => res.json())
-    .then((response) => { 
-      
-      /* START PRELOADER */
-     
-    hideloader();
-    console.log(Response)
-    this.dt = Response;
-    this.dataDisplay = this.dt.data;
-      /* END PRELOADER */
+    .then((response) => {
+      // /* START PRELOADER */
 
+      // hideloader();
+      // console.log(Response);
+      // this.dt = Response;
+      // this.dataDisplay = this.dt.data;
+      // /* END PRELOADER */
 
       showProducts(response);
       //   console.log(response);
-    }
-    )
+    })
     .catch((err) => {
       console.error(err);
     });
@@ -77,14 +73,13 @@ function getData() {
 
 function hideloader() {
   console.log("hideloader");
-   document.querySelector("#loader").classList.add("fadeout");
-   document.querySelector(".loaderWrapper").classList.add("fadeout");
-   document.querySelector.offsetHeight;
-   document.querySelector("#loader").classList.add("hidden");
-   document.querySelector(".loaderWrapper").classList.add("hidden");
-   document.getElementById("myDiv").style.display = "block";
+  document.querySelector("#loader").classList.add("fadeout");
+  document.querySelector(".loaderWrapper").classList.add("fadeout");
+  document.querySelector.offsetHeight;
+  document.querySelector("#loader").classList.add("hidden");
+  document.querySelector(".loaderWrapper").classList.add("hidden");
+  document.getElementById("myDiv").style.display = "block";
 }
-
 
 getData();
 
