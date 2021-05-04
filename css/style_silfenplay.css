@@ -19,7 +19,7 @@ body {
 #bannerTop {
   margin: 0;
   padding: 0;
-  background-color: #b3e8ef;
+  background-color: #e3ff36;
   overflow: hidden;
   z-index: -1;
 }
@@ -148,21 +148,6 @@ nav {
   padding: 3%;
   letter-spacing: 1px;
   font-weight: 500;
-}
-
-.bgNav1 {
-  background-color: #7bafd4;
-  color: black;
-}
-
-.bgNav2 {
-  background-color: #e3ff36;
-  color: black;
-}
-
-.bgNavShadow {
-  color: rgb(196, 196, 196);
-  background-color: white;
 }
 
 /* HEADER ENDS*/
@@ -320,8 +305,8 @@ button {
   .buttonNav1 {
     height: 100%;
     border: none;
-    background-color: #7bafd4;
-    color: #e3ff36;
+    background-color: #f1f1f1;
+    color: rgb(146, 146, 146);
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -333,6 +318,7 @@ button {
 
   .buttonNav1:hover {
     color: #e3ff36;
+    background-color: #7bafd4;
   }
 
   .buttonNav1 h2 {
@@ -350,8 +336,8 @@ button {
   .buttonNav2 {
     height: 100%;
     border: none;
-    background-color: #ffffff;
-    color: rgb(146, 146, 146);
+    background-color: #e3ff36;
+    color: black;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -479,8 +465,8 @@ button {
   .buttonNav1 {
     width: 100%;
     border: none;
-    background-color: #7bafd4;
-    color: #e3ff36;
+    background-color: #e7e7e7;
+    color: rgb(146, 146, 146);
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
@@ -491,6 +477,7 @@ button {
   }
 
   .buttonNav1:hover {
+    background-color: #7bafd4;
     color: #e3ff36;
   }
 
@@ -501,8 +488,8 @@ button {
   .buttonNav2 {
     width: 100%;
     border: none;
-    background-color: #ffffff;
-    color: rgb(146, 146, 146);
+    background-color: #e3ff36;
+    color: rgb(0, 0, 0);
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
@@ -530,7 +517,6 @@ button {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     position: relative;
-    z-index: 5;
   }
 
   .logoMobile {
@@ -550,7 +536,7 @@ button {
   }
 
   .topnav a.icon {
-    background: #b3e8ef;
+    background: #ffffff;
     display: block;
     position: absolute;
     right: 0;
@@ -563,7 +549,7 @@ button {
   }
 
   .active {
-    background-color: #b3e8ef;
+    background-color: #ffffff;
   }
 
   /*FOOTER*/

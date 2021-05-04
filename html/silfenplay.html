@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silfen home page</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <title>Silfen</title>
+    <link rel="stylesheet" href="/css/style_silfenplay.css" />
+    <link rel="stylesheet" href="/css/index_silfenplay.css"/>
   </head>
   <body>
     <div class="wrapper">
@@ -37,18 +36,15 @@
         <div class="topnav">
           <a href="#home" class="active">
             <img
-              src="/links/SILFEN-LOGO.png"
+              src="/links/silfen_play.svg"
               alt="silfen logo"
               class="logoMobile"
             />
           </a>
           <div id="myLinks">
-            <a href="#news">BAGS</a>
-            <a href="#contact">SALE</a>
-            <a href="#about">#SILFENSTARS</a>
-            <a href="#about">ABOUT</a>
-            <a href="#about">FOR THE PLANET</a>
-            <a href="#about">CART</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <h5 class="fa fa-bars">MENU</h5>
@@ -58,7 +54,7 @@
         <nav>
           <ul class="menu">
             <li class="dropdown">
-              <a href="">bags</a>
+              <a href="">shop</a>
               <ul class="dropdown1">
                 <li><a href="/html/productlist.html">Shop All</a></li>
                 <li><a href="/html/productlist.html?newarrival=true">New Arrivals</a></li>
@@ -91,7 +87,7 @@
             <li>
               <div id="logo">
                 <a href="index.html"
-                  ><img src="/links/SILFEN-LOGO.png" alt="silfen logo"
+                  ><img src="/links/silfen_play.svg" alt="silfen logo"
                 /></a>
               </div>
             </li>
@@ -141,38 +137,28 @@
       </header>
       <!--END NAVIGATION-->
       <main>
-        <h1 class="buttonSlide1">Recycled collection</h1>
+        <h1 class="buttonSlide1">Sustainable collection</h1>
         <div id="slideshow">
           <a href="#">
-            <video autoplay loop muted class="slide">
-              <source
-                src="/links/silfen_video_landscape_2.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <img src="/links/silfenplay_1" alt="img1" class="slide"/>
           </a>
-          <a href="#" class="video2">
-            <video autoplay loop muted class="slide">
-              <source
-                src="/links/silfen_video_landscape_1.mp4"
-                type="video/mp4"
-              />
-            </video>
+          <a href="#">
+            <img src="/links/mike-von-yQTCPf-AnUY-unsplash.jpg" alt="img2" class="slide"/>
           </a>
         </div>
         <section id="collection">
           <h4>discover the collections</h4>
           <div class="collectionList">
             <div class="newCollection">
-              <h1><a href="/html/productlist.html?collection=fairytale">01.04.21 Fairytale</a></h1>
+              <h1><a href="/html/productlist.html?collection=fairytale">01.04.21 Collection 01</a></h1>
               <div class="starNew rotation"></div>
             </div>
-            <h1><a href="/html/productlist.html?collection=snowqueen">30.10.20 Snow Queen</a></h1>
-            <h1><a href="/html/productlist.html?collection=recycled">15.02.20 Recycled</a></h1>
+            <h1><a href="/html/productlist.html?collection=snowqueen">30.10.20 Collection 02</a></h1>
+            <h1><a href="/html/productlist.html?collection=recycled">15.02.20 Collection 03</a></h1>
           </div>
         </section>
         <section id="mostWanted">
-          <h4>shop the most wanted bags</h4>
+          <h4>shop the most wanted items</h4>
             <article class="mwbag">
             <template class="mwtemplate">
               <article class="saleItem">
@@ -202,29 +188,6 @@
               </article>
             </template></article>
         </section>
-        <section id="silfenStars">
-          <div class="silfenStarsImg">
-            <h1 class="silfenStarsTitle">#SilfenStars</h1>
-          </div>
-          <div class="silfenStarText">
-            <h2>
-              What we do is all about making women feel even more confident.
-              #SilfenStars is a state of mind more than anything, a form of self
-              expression, everyone is welcome.
-            </h2>
-            <h2><strong>#SilfenStars – share your looks with us.</strong></h2>
-          </div>
-        </section>
-        <section class="silfenStarFeed">
-          <img src="/links/IG1.jpg" alt="IG1" />
-          <img src="/links/IG2.jpg" alt="IG1" />
-          <img src="/links/IG3.jpg" alt="IG1" />
-          <img src="/links/IG4.jpg" alt="IG1" />
-          <img src="/links/IG5.jpg" alt="IG1" />
-          <img src="/links/IG6.jpg" alt="IG1" />
-          <img src="/links/IG7.jpg" alt="IG1" />
-          <img src="/links/IG8.jpg" alt="IG1" />
-        </section>
       </main> 
     <!-- FOOTER -->
       <footer> 
@@ -238,8 +201,8 @@
            </ul>
            <ul class="socials">
               <li><a href=""><img class="socilaIcon" src="/links/icon_ig.svg" alt="Instagram icon"></a></li>
-              <li><a href=""><img class="socilaIcon"src="/links/icon_fb.svg" alt="Facebook icon"></a></li>
-              <li><a href=""><img class="socilaIcon"src="/links/icon_youtube.svg" alt="Youtube icon"></a></li>
+              <li><a href=""><img class="socilaIcon" src="/links/icon_fb.svg" alt="Facebook icon"></a></li>
+              <li><a href=""><img class="socilaIcon" src="/links/icon_youtube.svg" alt="Youtube icon"></a></li>
            </ul>
          </div>
        </div>
@@ -267,9 +230,9 @@
       
     
         </footer></div></div>
-    <script src="newsletter.js"></script>
-    <script src="searchbar.js"></script>
-    <script src="index.js"></script>
-    <script src="burger_menu.js"></script>
+    <script src="/newsletter.js"></script>
+    <script src="/searchbar.js"></script>
+    <script src="/index.js"></script>
+    <script src="/burger_menu.js"></script>
   </body>
 </html>
