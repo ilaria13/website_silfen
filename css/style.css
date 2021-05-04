@@ -242,10 +242,11 @@ strong {
 /*CART*/
 .cart {
   position: absolute;
-  top: 0;
+  top: 80px;
   right: 0;
   background-color: white;
   padding: 40px;
+  display: block;
 }
 
 .cart h3 {

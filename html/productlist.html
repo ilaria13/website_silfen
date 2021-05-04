@@ -109,7 +109,7 @@
                 </ul>
               </li>
   <div class="together">
-              <li><a href=""> cart(<span>0</span>)</a></li>
+              <li><a class="cart-icon"> cart(<span>0</span>)</a></li>
               <li>
                 <a id="searchicon">&#128270;</a>
               </li>
@@ -137,7 +137,6 @@
         </header>
       <!--END NAVIGATION-->
     <!--cart template-->
-    <div class="cart-item"></div>
     <template class="cart-item-template">
         <label class="label" for="fid-">NAME</label>
         <label class="label2" for="fid-">COLLECTION</label>
@@ -147,7 +146,7 @@
         <p class="price-each"><span></span> DKK</p>
     </template>
     <!--END cart template-->
-    <aside class="cart">
+    <aside id="cart" class="cart">
       <h3>Shopping Cart</h3>
       <form>
         <div class="cart-content">
@@ -237,6 +236,7 @@
         </footer></div>
           <script src="/newsletter.js"></script>
           <script src="/searchbar.js"></script>
-    <script src="../productlist.js"></script>
+    <script src="/productlist.js"></script>
+    <script src="/cart.js"></script>
   </body>
 </html>

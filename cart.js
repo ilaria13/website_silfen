@@ -1,3 +1,18 @@
+window.addEventListener("load", hideCart);
+
+function hideCart() {
+  console.log("hideCart()");
+  document.querySelector("#cart").classList.add("hidden");
+  document.querySelector(".cart-icon").addEventListener("click", showCart);
+}
+
+function showCart() {
+  console.log("showCart()");
+  this.removeEventListener("click", showCart);
+  document.querySelector("#cart").classList.remove("hidden");
+  document.querySelector(".cart-icon").addEventListener("click", hideCart);
+}
+
 const CART = {
   KEY: "basket",
   contents: [],
