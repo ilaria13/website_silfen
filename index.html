@@ -7,17 +7,16 @@
     <title>Silfen home page</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <div class="wrapper">
     <!--START SIDE NAVIGATION-->
     <div id="navside">
       <div id="nav1" class="bgNav1">
-        <button class="buttonNav1"><h2>Silfen</h2></button>
+        <a href="index.html"><button class="buttonNav1"><h2>Silfen</h2></button></a>
       </div>
       <div id="nav2">
-        <button class="buttonNav2"><h2>Silfen Play</h2></button>
+        <a href="/html/silfenplay.html"><button class="buttonNav2"><h2>Silfen Play</h2></button></a>
       </div>
     </div>
     <!--END SIDE NAVIGATION-->
@@ -35,7 +34,7 @@
         </div>
         <!--TOP SIDE NAVIGATION-->
         <div class="topnav">
-          <a href="#home" class="active">
+          <a href="index.html" class="active">
             <img
               src="/links/SILFEN-LOGO.png"
               alt="silfen logo"
@@ -43,12 +42,12 @@
             />
           </a>
           <div id="myLinks">
-            <a href="#news">BAGS</a>
-            <a href="#contact">SALE</a>
-            <a href="#about">#SILFENSTARS</a>
-            <a href="#about">ABOUT</a>
-            <a href="#about">FOR THE PLANET</a>
-            <a href="#about">CART</a>
+            <a href="/html/productlist.html">BAGS</a>
+            <a href="/html/productlist.html">SALE</a>
+            <a href="/html/silfenstars.html">#SILFENSTARS</a>
+            <a href="/html/insidesilfen.html">ABOUT</a>
+            <a href="/html/sustainability.html">FOR THE PLANET</a>
+            <a class="">CART</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <h5 class="fa fa-bars">MENU</h5>
@@ -58,7 +57,7 @@
         <nav>
           <ul class="menu">
             <li class="dropdown">
-              <a href="">bags</a>
+              <a href="">BAGS</a>
               <ul class="dropdown1">
                 <li><a href="/html/productlist.html">Shop All</a></li>
                 <li><a href="/html/productlist.html?newarrival=true">New Arrivals</a></li>
@@ -86,8 +85,8 @@
                 <li><a href="#">Gift Card</a></li>
               </ul>
             </li>
-            <li><a href="">sale</a></li>
-            <li><a href="/html/silfenstars.html">#silfenstar</a></li>
+            <li><a href="/html/productlist.html">SALE</a></li>
+            <li><a href="/html/silfenstars.html">#SILFENSTARS</a></li>
             <li>
               <div id="logo">
                 <a href="index.html"
@@ -96,7 +95,7 @@
               </div>
             </li>
             <li class="dropdown">
-              <a href="">about</a>
+              <a href="">ABOUT</a>
               <ul class="dropdown1">
                 <li><a href="/html/insidesilfen.html">Inside Silfen</a></li>
                 <li><a href="/html/silfenstars.html">#Silfenstars</a></li>
@@ -105,7 +104,7 @@
             </li>
 
             <li class="dropdown">
-              <a href="">for the planet</a>
+              <a href="">FOR THE PLANET</a>
               <ul class="dropdown1">
                 <li><a href="/html/sustainability.html">Sustainability</a></li>
                 <li><a href="/html/supplychain.html">Supply Chain</a></li>
@@ -113,7 +112,7 @@
               </ul>
             </li>
 <div class="together">
-            <li><a class="cart-icon"> cart(<span>0</span>)</a></li>
+            <li><a class="cart-icon"> CART</a></li>
             <li>
               <a id="searchicon">&#128270;</a>
             </li>
@@ -157,12 +156,12 @@
         <h4>THE CART IS EMPTY</h4>
       </div>
       
-      <button type="submit">Checkout & pay</button>
+       <button type="submit"><a href="/html/checkout.html">Checkout & Pay</a></button>
     </form>
   </aside>
 <!-- .END .cart-content-->
       <main>
-        <h1 class="buttonSlide1">Recycled collection</h1>
+        <a href="/html/productlist.html?collection=recycled"><h1 class="buttonSlide1">Recycled Collection</h1></a>
         <div id="slideshow">
           <a href="#">
             <video autoplay loop muted class="slide">
@@ -288,9 +287,9 @@
       
     
         </footer></div></div>
+        <script src="index.js"></script>
     <script src="newsletter.js"></script>
     <script src="searchbar.js"></script>
-    <script src="index.js"></script>
     <script src="burger_menu.js"></script>
     <script src="cart.js"></script>
   </body>
