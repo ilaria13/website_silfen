@@ -1,3 +1,18 @@
+/*LOADER START */
+/* document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+    console.log("loading");
+    document.querySelector("#loader").classList.add = "hidden";
+    document.querySelector("main").classList.remove = "hidden";
+  } else {
+    console.log("finished loading");
+      document.querySelector("#loader").classList.add = "hidden";
+      document.querySelector("main").classList.remove = "hidden";
+  }
+}; */
+/*LOADER END */
+
+
 const urlParams = new URLSearchParams(window.location.search);
 const collectionFromUrl = urlParams.get("collection");
 const categoryFromUrl = urlParams.get("category");
@@ -5,6 +20,8 @@ const bestsellerFromUrl = urlParams.get("bestseller");
 const newarrivalFromUrl = urlParams.get("newarrival");
 
 let url = "https://silfen-9520.restdb.io/rest/products";
+
+/*LOADER */
 
 if (categoryFromUrl) {
   url =
@@ -38,14 +55,36 @@ function getData() {
     },
   })
     .then((res) => res.json())
-    .then((response) => {
+    .then((response) => { 
+      
+      /* START PRELOADER */
+     
+    hideloader();
+    console.log(Response)
+    this.dt = Response;
+    this.dataDisplay = this.dt.data;
+      /* END PRELOADER */
+
+
       showProducts(response);
       //   console.log(response);
-    })
+    }
+    )
     .catch((err) => {
       console.error(err);
     });
 }
+
+function hideloader() {
+  console.log("hideloader");
+   document.querySelector("#loader").classList.add("fadeout");
+   document.querySelector(".loaderWrapper").classList.add("fadeout");
+   document.querySelector.offsetHeight;
+   document.querySelector("#loader").classList.add("hidden");
+   document.querySelector(".loaderWrapper").classList.add("hidden");
+   document.getElementById("myDiv").style.display = "block";
+}
+
 
 getData();
 
