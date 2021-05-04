@@ -241,7 +241,7 @@ a {
   /*silfen star*/
   #silfenStars {
     background-color: #aed5b2;
-    display: flex;
+    display: block;
     flex-direction: column;
   }
 
@@ -254,12 +254,12 @@ a {
     color: #e3ff36;
     position: relative;
     padding: 25px;
+    }
   }
 
   .silfenStarText {
     align-self: flex-end;
     padding: 25px;
-    width: 90%;
   }
   .silfenStarText h2 {
     font-size: 1.5em;

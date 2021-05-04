@@ -6,6 +6,7 @@
 }
 #slideshow {
   background-color: #e3ff36;
+  max-width: 100%;
 }
 
 #collection {
@@ -126,7 +127,7 @@ a {
 
   .slide {
     display: block;
-    height: 80vh;
+    height: auto;
     width: 100%;
     object-fit: cover;
     margin: 0;
