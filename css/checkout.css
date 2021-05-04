@@ -86,7 +86,7 @@ form > * {
 
 .content-name {
   position: absolute;
-  bottom: 5px;
+  bottom: 20px;
   left: 0px;
   transition: all 0.4s ease;
 }
