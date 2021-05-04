@@ -3,6 +3,79 @@ main {
   background-color: rgb(236, 236, 236);
 } 
 
+/*PAGE LOADER START*/
+
+.loaderWrapper {position:block;
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+ height: 40%;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+#loader {  z-index: 1;
+  margin: 2em;
+  width: 80px;
+  height: 80px;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid #b3e8ef;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ /*Page appearing after load*/
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/*PAGE LOADER END*/
+
 h1 {
   text-align: center;
   margin-bottom: 5rem;

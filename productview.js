@@ -93,7 +93,7 @@ function showRelatedProducts(relatedProducts) {
       var relatedImg = this.parentNode.previousElementSibling.firstElementChild;
    relatedImg.src ="https://annadalsgaard.dk/img/" +
       color + product.basename});
-    copy.querySelector(".colorpicker").appendChild(div); 
+    copy.querySelector(".colorpicker2").appendChild(div); 
   })
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;

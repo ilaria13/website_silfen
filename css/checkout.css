@@ -85,7 +85,7 @@ form > * {
   position: absolute;
   bottom: 5px;
   left: 0px;
-  transition: all 0.28s ease;
+  transition: all 0.4s ease;
 }
 
 .search input:focus + .label-name .content-name,

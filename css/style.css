@@ -286,6 +286,9 @@ button {
   display: none;
 }
 
+.fadeout {transform: opacity(0%);
+  transition: all 0.28s ease;}
+
 /*RESPONSIVE*/
 @media only screen and (min-width: 750px) {
   body {
