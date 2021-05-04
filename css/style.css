@@ -304,6 +304,7 @@ input::-webkit-outer-spin-button {
 }
 
 /*SEARCH*/
+
 .searchform {
   padding-right: 3%;
   float: right;
@@ -323,7 +324,7 @@ button {
 .searchresults {
   padding-top: 10%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .searchpage {
   display: block;

@@ -63,8 +63,14 @@ function show(matches, q) {
     );*/
     const h3Content = match.price;
     console.log(h2Content);
+
+    const imgContent = match.imgurl1;
+
     copy.querySelector("h2").innerHTML = h2Content;
-    copy.querySelector("h3").innerHTML = h3Content;
+    copy.querySelector("h3").innerHTML = h3Content + " DKK";
+
+    // copy.querySelector(".img").src = imgContent;
+
     // copy.querySelector("h3").innerHTML = match.collection.replaceAll(
     //   q,
     //   '<span class="red">' + q + "</span>"
