@@ -53,7 +53,6 @@
               <h5 class="fa fa-bars">MENU</h5>
             </a>
           </div>
-  
           <nav>
             <ul class="menu">
               <li class="dropdown">
@@ -131,7 +130,6 @@
                     <h3></h3>
                   </div>
                 </template>
-  
                 <section class="searchresults"></section>
               </div>
             </div>
@@ -155,6 +153,7 @@
         <div class="cart-content">
           <h4>THE CART IS EMPTY</h4>
         </div>
+        <h4 class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</h4>
         
         <button class="checkoutbutton" type="submit"><a href="/html/checkout.html">Checkout & Pay</a></button>
       </form>
@@ -189,13 +188,14 @@
       </article>
     </template>
     <!-- PRODUCT TEMPLATE END -->
-
+    <div class="loaderWrapper"><div id="loader"></div></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
     <main>
       <div class="pagTitle">
         <h1>Shop</h1>
       </div>
       <section class="productList"></section>
-    </main>
+    </main></div>
         <!-- FOOTER -->
       <footer> 
         <div class="footerLeft">

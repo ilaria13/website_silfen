@@ -28,7 +28,7 @@ function showMostWanted(products) {
     copy.querySelector(".name").textContent = product.name;
     copy.querySelector(".productImage").src = product.imgurl1;
     copy.querySelector(".collection").textContent = product.collection;
-    copy.querySelector(".colours").textContent = product.color;
+    // copy.querySelector(".colours").textContent = product.color;
     copy.querySelector(".OPrice span").textContent = product.price;
     copy.querySelector(".NewPrice span").textContent = product.newprice;
     copy.querySelector("button").dataset.id += product._id;
