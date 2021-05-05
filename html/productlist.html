@@ -139,6 +139,10 @@
         </header>
         <!--END NAVIGATION-->
         <!--cart template-->
+        <div class="loaderWrapper">
+          <div id="loader"></div>
+        </div>
+        <div style="display:none;" id="transitionLoader" class="animate-bottom"></div>
       <template class="cart-item-template">
         <label class="label" for="fid-">NAME</label>
         <label class="label2" for="fid-">COLLECTION</label>
@@ -154,6 +158,7 @@
         <div class="cart-content">
           <h4>THE CART IS EMPTY</h4>
         </div>
+        <h4 class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</h4>
         
         <button type="submit"><a href="/html/checkout.html">Checkout & Pay</a></button>
       </form>

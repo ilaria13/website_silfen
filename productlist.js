@@ -4,6 +4,7 @@ document.onreadystatechange = function() {
     console.log("loading");
     document.querySelector("#loader").classList.add = "hidden";
     document.querySelector("main").classList.remove = "hidden";
+    
   } else {
     console.log("finished loading");
       document.querySelector("#loader").classList.add = "hidden";
