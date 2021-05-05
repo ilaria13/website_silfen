@@ -130,7 +130,7 @@ totalCart()
 
   
 };
-
+var totalCount = 0;
 function countCart() {
   var totalCount = 0;
   for (var index in CART.contents) {
@@ -143,12 +143,10 @@ function totalCart() {
   var totalCost = 0;
   for (var index in CART.contents) {
     totalCost+= CART.contents[index].price * CART.contents[index].qty;
-    document.querySelector(".cartTotal").textContent=`${totalCost}`;
-  }
+ document.querySelector(".cartTotal").textContent=`${totalCost}`;}
   return totalCost;
-  
-  
 }
+  
 
 
 
