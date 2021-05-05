@@ -1,5 +1,5 @@
 /*LOADER START */
-/* document.onreadystatechange = function() {
+document.onreadystatechange = function() {
   if (document.readyState !== "complete") {
     console.log("loading");
     document.querySelector("#loader").classList.add = "hidden";
@@ -9,7 +9,7 @@
       document.querySelector("#loader").classList.add = "hidden";
       document.querySelector("main").classList.remove = "hidden";
   }
-}; */
+}; 
 /*LOADER END */
 
 const urlParams = new URLSearchParams(window.location.search);
