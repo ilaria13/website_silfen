@@ -130,7 +130,6 @@
                     <h3></h3>
                   </div>
                 </template>
-  
                 <section class="searchresults"></section>
               </div>
             </div>
@@ -139,10 +138,6 @@
         </header>
         <!--END NAVIGATION-->
         <!--cart template-->
-        <div class="loaderWrapper">
-          <div id="loader"></div>
-        </div>
-        <div style="display:none;" id="transitionLoader" class="animate-bottom"></div>
       <template class="cart-item-template">
         <label class="label" for="fid-">NAME</label>
         <label class="label2" for="fid-">COLLECTION</label>
@@ -193,13 +188,14 @@
       </article>
     </template>
     <!-- PRODUCT TEMPLATE END -->
-
+    <div class="loaderWrapper"><div id="loader"></div></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
     <main>
       <div class="pagTitle">
         <h1>Shop</h1>
       </div>
       <section class="productList"></section>
-    </main>
+    </main></div>
         <!-- FOOTER -->
       <footer> 
         <div class="footerLeft">

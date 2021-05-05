@@ -1,5 +1,5 @@
 /*LOADER START */
-document.onreadystatechange = function() {
+/* document.onreadystatechange = function() {
   if (document.readyState !== "complete") {
     console.log("loading");
     document.querySelector("#loader").classList.add = "hidden";
@@ -17,7 +17,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const collectionFromUrl = urlParams.get("collection");
 const categoryFromUrl = urlParams.get("category");
 const bestsellerFromUrl = urlParams.get("bestseller");
-const newarrivalFromUrl = urlParams.get("newarrival");
+const newarrivalFromUrl = urlParams.get("newarrival"); 
 
 let url = "https://silfen-9520.restdb.io/rest/products";
 
@@ -58,14 +58,14 @@ function getData() {
     .then((response) => {
       // /* START PRELOADER */
 
-      // hideloader();
-      // console.log(Response);
-      // this.dt = Response;
-      // this.dataDisplay = this.dt.data;
-      // /* END PRELOADER */
+      hideloader();
+     console.log(Response);
+      this.dt = Response;
+      this.dataDisplay = this.dt.data;
+       /* END PRELOADER */
 
       showProducts(response);
-      //   console.log(response);
+        console.log(response);
     })
     .catch((err) => {
       console.error(err);
@@ -79,7 +79,8 @@ function hideloader() {
   document.querySelector.offsetHeight;
   document.querySelector("#loader").classList.add("hidden");
   document.querySelector(".loaderWrapper").classList.add("hidden");
-  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("myDiv").style.display = "block"; 
+  
 }
 
 getData();
