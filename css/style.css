@@ -339,6 +339,9 @@ button {
   /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
   z-index: 99;
 }
+.img {
+  height: 20vw;
+}
 .hidden {
   display: none;
 }

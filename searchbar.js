@@ -69,7 +69,7 @@ function show(matches, q) {
     copy.querySelector("h2").innerHTML = h2Content;
     copy.querySelector("h3").innerHTML = h3Content + " DKK";
 
-    // copy.querySelector(".img").src = imgContent;
+    copy.querySelector(".img").src = imgContent;
 
     // copy.querySelector("h3").innerHTML = match.collection.replaceAll(
     //   q,
