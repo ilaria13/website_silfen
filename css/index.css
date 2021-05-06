@@ -82,7 +82,7 @@ button {
   width: 8vw;
   height: 8vw;
   background-repeat: no-repeat;
-  background-image: url(/links/star-new.svg);
+  background-image: url(../links/star-new.svg);
   background-size: 100%;
 }
 .rotation {
@@ -148,7 +148,7 @@ a {
     width: 8vw;
     height: 8vw;
     background-repeat: no-repeat;
-    background-image: url(/links/star-new.svg);
+    background-image: url(../links/star-new.svg);
     background-size: 100%;
   }
   /*silfen star*/
@@ -159,7 +159,7 @@ a {
   }
 
   .silfenStarsImg {
-    background-image: url(/links/146429450_5369015533123765_4170415505502106668_n.jpg);
+    background-image: url(../links/146429450_5369015533123765_4170415505502106668_n.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-size: cover;
@@ -234,7 +234,7 @@ a {
     width: 15vw;
     height: 15vw;
     background-repeat: no-repeat;
-    background-image: url(/links/star-new.svg);
+    background-image: url(../links/star-new.svg);
     background-size: 100%;
   }
 
