@@ -157,7 +157,7 @@ img {
 }
 
 a:hover img {
-  cursor: url("/links/symbol.svg"), auto;
+  cursor: url("links/symbol.svg"), auto;
 }
 
 h1 {
